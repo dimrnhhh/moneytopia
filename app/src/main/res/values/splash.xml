@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Theme.Moneytopia.SplashScreen" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground" tools:ignore="NewApi">@android:color/system_neutral1_100</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splashscreen</item>
+        <item name="windowSplashScreenAnimationDuration">1500</item>
+        <item name="postSplashScreenTheme">@style/Theme.Moneytopia</item>
+    </style>
+</resources>
