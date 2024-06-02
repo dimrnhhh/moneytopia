@@ -95,7 +95,7 @@ dependencies {
     implementation("com.marosseleng.android:compose-material3-datetime-pickers:0.7.2")
 
     // Lifecycle ViewModel Compose
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.1")
 
     // AppCompat
     implementation("androidx.appcompat:appcompat:1.7.0")
