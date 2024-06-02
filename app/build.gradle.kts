@@ -98,7 +98,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.0")
 
     // AppCompat
-    implementation("androidx.appcompat:appcompat:1.7.0-rc01")
+    implementation("androidx.appcompat:appcompat:1.7.0")
 
     // Vico Compose Charts
     implementation("com.patrykandpatrick.vico:compose:1.14.0")
