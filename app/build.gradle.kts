@@ -80,7 +80,7 @@ dependencies {
     implementation("androidx.core:core-splashscreen:1.1.0-rc01")
 
     // Kotlinx Coroutines Core
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0-RC")
 
     // Accompanist System UI Controller Library
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.34.0")
