@@ -3,11 +3,5 @@
   "extends": [
     "config:recommended",
     ":dependencyDashboard"
-  ],
-  "packageRules": [
-    {
-      "matchPackagePatterns": ["org.jetbrains.kotlin.android"],
-      "enabled": false
-    }
   ]
 }
