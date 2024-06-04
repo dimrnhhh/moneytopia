@@ -12,16 +12,16 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
 
 ## Light Mode
 <div align="center">
-    <img src="art/1-light-expenses.webp" width="20%" alt="">
-    <img src="art/2-light-reports.webp" width="20%" alt="">
-    <img src="art/3-light-analytics.webp" width="20%" alt="">
-    <img src="art/4-light-settings.webp" width="20%" alt="">
+    <img src="art/1-light-expenses.webp" width="30%" alt="">
+    <img src="art/2-light-reports.webp" width="30%" alt="">
+    <img src="art/3-light-analytics.webp" width="30%" alt="">
+    <img src="art/4-light-settings.webp" width="30%" alt="">
 </div>
 
 ## Dark Mode
 <div align="center">
-    <img src="art/1-dark-expenses.webp" width="20%" alt="">
-    <img src="art/2-dark-reports.webp" width="20%" alt="">
-    <img src="art/3-dark-analytics.webp" width="20%" alt="">
-    <img src="art/4-dark-settings.webp" width="20%" alt="">
+    <img src="art/1-dark-expenses.webp" width="30%" alt="">
+    <img src="art/2-dark-reports.webp" width="30%" alt="">
+    <img src="art/3-dark-analytics.webp" width="30%" alt="">
+    <img src="art/4-dark-settings.webp" width="30%" alt="">
 </div>
