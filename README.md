@@ -1,4 +1,4 @@
-![Github Card Preview](https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/banner.png?raw=true)
+<img src="art/banner.png" alt="GtiHub Preview Card">
 
 # Moneytopia
 A fully functional app for tracking personal expenses built using Jetpack Compose with a simple UI for easy understanding and ease of use.
@@ -11,8 +11,8 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
 - Delete all expense records or delete them one by one
 
 ## Light Mode
-| Expenses                                                                                                   | Reports                                                                                                   | Analytics                                                                                                    | Settings                                                                                                    |
-|------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
+| Expenses                                                                                                    | Reports                                                                                                    | Analytics                                                                                                    | Settings                                                                                                    |
+|-------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------|
 | <img src="https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/1-light-expenses.png" width="443"> | <img src="https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/2-light-reports.png" width="443"> | <img src="https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/3-light-analytics.png" width="443"> | <img src="https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/4-light-settings.png" width="443"> |
 
 ## Dark Mode
