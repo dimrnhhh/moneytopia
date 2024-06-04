@@ -21,11 +21,9 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
 | ![](https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/1-dark-expenses.png) | ![](https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/2-dark-reports.png) | ![](https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/3-dark-analytics.png) | ![](https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/4-dark-settings.png) |
 
 ## Dynamic Color
-| Light Green                                                                                            | Light Pink                                                                                              |
-|--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
-| ![](https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/1-light-dynamic-color-expenses.png) | ![](https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/2-light-dynamic-color-analytics.png) |
-| Dark Orange                                                                                            | Dark Purple                                                                                             |
-| ![](https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/3-dark-dynamic-color-expenses.png?) | ![](https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/4-dark-dynamic-color-analytics.png)  |
+| Light Green                                                                                            | Light Pink                                                                                              | Dark Orange                                                                                            | Dark Purple                                                                                            |
+|--------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|
+| ![](https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/1-light-dynamic-color-expenses.png) | ![](https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/2-light-dynamic-color-analytics.png) | ![](https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/3-dark-dynamic-color-expenses.png?) | ![](https://raw.githubusercontent.com/dimrnhhh/moneytopia/main/art/4-dark-dynamic-color-analytics.png) |
 
 ## Download
 [<img src="metadata/en-US/images/icons/github.png" alt="Get it on GitHub" height="80">](https://github.com/dimrnhhh/moneytopia/releases/latest)
