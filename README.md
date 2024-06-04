@@ -11,11 +11,7 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
 - Delete all expense records or delete them one by one
 
 ## Light Mode
-| Expenses                                                | Reports                                                | Analytics                                                | Settings                                                |
-|---------------------------------------------------------|--------------------------------------------------------|----------------------------------------------------------|---------------------------------------------------------|
-| <img src="art/1-light-expenses.png" width="192" alt=""> | <img src="art/2-light-reports.png" width="192" alt=""> | <img src="art/3-light-analytics.png" width="192" alt=""> | <img src="art/4-light-settings.png" width="192" alt=""> |
+<img src="art/1-light-expenses.png" width="192" alt=""> <img src="art/2-light-reports.png" width="192" alt=""> <img src="art/3-light-analytics.png" width="192" alt=""> <img src="art/4-light-settings.png" width="192" alt="">
 
 ## Dark Mode
-| Expenses                                               | Reports                                               | Analytics                                               | Settings                                               |
-|--------------------------------------------------------|-------------------------------------------------------|---------------------------------------------------------|--------------------------------------------------------|
-| <img src="art/1-dark-expenses.png" width="192" alt=""> | <img src="art/2-dark-reports.png" width="192" alt=""> | <img src="art/3-dark-analytics.png" width="192" alt=""> | <img src="art/4-dark-settings.png" width="192" alt=""> |
+<img src="art/1-dark-expenses.png" width="192" alt=""> <img src="art/2-dark-reports.png" width="192" alt=""> <img src="art/3-dark-analytics.png" width="192" alt=""> <img src="art/4-dark-settings.png" width="192" alt="">
