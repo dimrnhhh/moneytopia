@@ -11,9 +11,9 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
 - Delete all expense records or delete them one by one
 
 ## Light Mode
-| Expenses                                         | Reports                             | Analytics                             | Settings                             |
-|--------------------------------------------------|-------------------------------------|---------------------------------------|--------------------------------------|
-| <img src="art/1-light-expenses.png" width="256"> | <img src="art/2-light-reports.png"> | <img src="art/3-light-analytics.png"> | <img src="art/4-light-settings.png"> |
+| Expenses                                         | Reports                              | Analytics                              | Settings                              |
+|--------------------------------------------------|--------------------------------------|----------------------------------------|---------------------------------------|
+| <img src="art/1-light-expenses.png" width="400"> | <img src="art/2-light-reports.png" width="400"> | <img src="art/3-light-analytics.png" width="400"> | <img src="art/4-light-settings.png" width="400"> |
 
 ## Dark Mode
 | Expenses                            | Reports                            | Analytics                            | Settings                            |
