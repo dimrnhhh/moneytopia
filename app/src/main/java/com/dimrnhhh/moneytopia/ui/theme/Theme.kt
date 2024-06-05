@@ -38,7 +38,6 @@ fun MoneytopiaTheme(
             val context = LocalContext.current
             if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
         }
-
         darkTheme -> DarkColorScheme
         else -> LightColorScheme
     }
@@ -52,7 +51,6 @@ fun MoneytopiaTheme(
             else systemUiController.setSystemBarsColor(color = colorScheme.background, darkIcons = true)
         }
     }
-
     MaterialTheme(
         colorScheme = colorScheme,
         typography = Typography,
