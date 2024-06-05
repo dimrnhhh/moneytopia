@@ -29,14 +29,6 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
     <img src="art/4-dark-settings.webp" width="24%" alt="">
 </div>
 
-## Dynamic Color
-<div align="center">
-    <img src="art/1-light-dynamic-color-expenses.webp" width="24%" alt="">
-    <img src="art/2-light-dynamic-color-analytics.webp" width="24%" alt="">
-    <img src="art/3-dark-dynamic-color-expenses.webp" width="24%" alt="">
-    <img src="art/4-dark-dynamic-color-analytics.webp" width="24%" alt="">
-</div>
-
 ## Requirements
 - Android Studio Jellyfish | 2023.3.1
 - Min SDK 28
@@ -54,4 +46,4 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
 - [AppCompat](https://mvnrepository.com/artifact/androidx.appcompat/appcompat)
 - [Compose Material Icons Extended](https://mvnrepository.com/artifact/androidx.compose.material/material-icons-extended)
 - [Vico Compose Chart](https://patrykandpatrick.com/vico/wiki/1.14.0/getting-started)
-- [Accompanist System UI Controller Library(Deprecated)](https://mvnrepository.com/artifact/com.google.accompanist/accompanist-systemuicontroller)
+- [Accompanist System UI Controller Library (Deprecated)](https://mvnrepository.com/artifact/com.google.accompanist/accompanist-systemuicontroller)
