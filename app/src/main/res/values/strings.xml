@@ -88,7 +88,7 @@
     <string name="del_button">Delete</string>
     <string name="del_desc">Delete All Transactions</string>
     <string name="lang_button">Language</string>
-    <string name="lang_desc">Change Language &amp; Currency</string>
+    <string name="lang_desc">Change Language</string>
     <string name="about_button">About</string>
     <string name="warning">
         Warning: You are currently using a development build.

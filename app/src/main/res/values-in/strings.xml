@@ -92,7 +92,7 @@
     <string name="del_button">Hapus</string>
     <string name="del_desc">Hapus Semua Transaksi</string>
     <string name="lang_button">Bahasa</string>
-    <string name="lang_desc">Ubah Bahasa &amp; Mata Uang</string>
+    <string name="lang_desc">Ubah Bahasa</string>
     <string name="about_button">Tentang</string>
     <string name="warning">
         Peringatan: Saat ini Anda sedang menggunakan versi pengembangan.
