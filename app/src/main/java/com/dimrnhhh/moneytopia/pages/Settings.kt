@@ -1,6 +1,11 @@
 package com.dimrnhhh.moneytopia.pages
 
+import android.content.Intent
+import android.net.Uri
+import android.os.Build
+import android.provider.Settings
 import androidx.activity.compose.BackHandler
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
@@ -13,6 +18,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.outlined.Delete
 import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material.icons.outlined.Language
 import androidx.compose.material.icons.outlined.Warning
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.ButtonColors
@@ -53,6 +59,7 @@ import com.dimrnhhh.moneytopia.models.Expense
 import io.realm.kotlin.ext.query
 import kotlinx.coroutines.launch
 
+@RequiresApi(Build.VERSION_CODES.TIRAMISU)
 @Composable
 fun SettingsPage(
     navController: NavController,
@@ -72,6 +79,9 @@ fun SettingsPage(
     }
     val snackbarHostState = remember { SnackbarHostState() }
     val context = LocalContext.current
+    val intent = Intent(Settings.ACTION_APP_LOCALE_SETTINGS)
+    val uri = Uri.fromParts("package", context.packageName, null)
+    intent.data = uri
     Scaffold(
         topBar = {
             val openAlertDialog = remember { mutableStateOf(false) }
@@ -105,12 +115,14 @@ fun SettingsPage(
                 supportingContent = stringResource(R.string.del_desc),
                 onClick = { deleteAlertDialog = true }
             ),
-//            MenuSettingItem(
-//                headlineContent = stringResource(R.string.lang_button),
-//                leadingContent = Icons.Outlined.Language,
-//                supportingContent = stringResource(R.string.lang_desc),
-//                onClick = { navController.navigate("settings/languages") }
-//            ),
+            MenuSettingItem(
+                headlineContent = stringResource(R.string.lang_button),
+                leadingContent = Icons.Outlined.Language,
+                supportingContent = stringResource(R.string.lang_desc),
+                onClick = {
+                    context.startActivity(intent)
+                }
+            ),
             MenuSettingItem(
                 headlineContent = stringResource(R.string.about_button),
                 leadingContent = Icons.Outlined.Info,
