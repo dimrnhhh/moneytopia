@@ -196,7 +196,7 @@ fun SettingsPage(
                 headlineContent = {
                     Text(
                         modifier = Modifier
-                            .padding(vertical = 5.dp),
+                            .padding(vertical = 8.dp),
                         text = stringResource(R.string.warning),
                         style = MaterialTheme.typography.bodyMedium,
                         color = MaterialTheme.colorScheme.error

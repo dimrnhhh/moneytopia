@@ -6,8 +6,19 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.AddCard
 import androidx.compose.material.icons.outlined.Category
+import androidx.compose.material.icons.outlined.ConfirmationNumber
+import androidx.compose.material.icons.outlined.CreditCard
 import androidx.compose.material.icons.outlined.Delete
+import androidx.compose.material.icons.outlined.FamilyRestroom
+import androidx.compose.material.icons.outlined.HealthAndSafety
+import androidx.compose.material.icons.outlined.LocalTaxi
+import androidx.compose.material.icons.outlined.Payment
+import androidx.compose.material.icons.outlined.Restaurant
+import androidx.compose.material.icons.outlined.Savings
+import androidx.compose.material.icons.outlined.School
+import androidx.compose.material.icons.outlined.ShoppingBag
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ListItem
@@ -46,6 +57,44 @@ fun ExpensesRow(
     val sheetState = rememberModalBottomSheetState()
     val showBottomSheet = rememberSaveable { mutableStateOf(false) }
     val backStackEntry by navController.currentBackStackEntryAsState()
+    val categoryIcon = when (expense.category) {
+        stringResource(R.string.bills) -> {
+            Icons.Outlined.Payment
+        }
+        stringResource(R.string.debt) -> {
+            Icons.Outlined.CreditCard
+        }
+        stringResource(R.string.education) -> {
+            Icons.Outlined.School
+        }
+        stringResource(R.string.entertainment) -> {
+            Icons.Outlined.ConfirmationNumber
+        }
+        stringResource(R.string.family) -> {
+            Icons.Outlined.FamilyRestroom
+        }
+        stringResource(R.string.foods_and_drinks) -> {
+            Icons.Outlined.Restaurant
+        }
+        stringResource(R.string.healthcare) -> {
+            Icons.Outlined.HealthAndSafety
+        }
+        stringResource(R.string.savings) -> {
+            Icons.Outlined.Savings
+        }
+        stringResource(R.string.shopping) -> {
+            Icons.Outlined.ShoppingBag
+        }
+        stringResource(R.string.top_up) -> {
+            Icons.Outlined.AddCard
+        }
+        stringResource(R.string.transportation) -> {
+            Icons.Outlined.LocalTaxi
+        }
+        else -> {
+            Icons.Outlined.Category
+        }
+    }
     ListItem(
         modifier = Modifier
             .fillMaxWidth()
@@ -65,7 +114,7 @@ fun ExpensesRow(
             },
         leadingContent = {
             Icon(
-                imageVector = Icons.Outlined.Category,
+                imageVector = categoryIcon,
                 contentDescription = null
             )
         },
