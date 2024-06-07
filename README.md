@@ -1,4 +1,4 @@
-<img src="art/banner.webp" alt="GtiHub Preview Card">
+<img src="art/banner.webp" alt="GitHub Preview Card">
 
 # Moneytopia
 A fully functional app for tracking personal expenses built using Jetpack Compose with a simple UI for easy understanding and ease of use.
@@ -7,11 +7,15 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
 [<img src="art/get-it-on-github.webp" alt="Get it on GitHub" height="80">](https://github.com/dimrnhhh/moneytopia/releases/latest)
 
 ## Features
+- Material 3 (Material You) UI with Dynamic Color
+- Automatic light/dark mode
+- Multi-language (currently available: en-US, id-ID)
 - Recent transactions within the last 24 hours
 - A report that contains all expenses
 - Expenses in a line chart view
-- Swipe able action to display expenses from a certain period of time
-- Delete all expense records or delete them one by one
+- Swipe-able action to display expenses from a certain period of time
+- Delete all expense records or delete them one by one, and
+- No unnecessary permissions needed to use this app
 
 ## Light Mode
 <div align="center">
@@ -29,7 +33,7 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
     <img src="art/4-dark-settings.webp" width="24%" alt="">
 </div>
 
-## Requirements
+## Requirements (for developers)
 - Android Studio Jellyfish | 2023.3.1
 - Min SDK 28
 - Target SDK 34
@@ -37,7 +41,7 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
 - JDK 21
 - Kotlin 2.0.0
 
-## Dependencies
+## Dependencies (for developers)
 - [Realm Kotlin](https://www.mongodb.com/docs/atlas/device-sdks/sdk/kotlin/install/)
 - [Kotlinx Coroutines Core](https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-core)
 - [Compose Navigation](https://mvnrepository.com/artifact/androidx.navigation/navigation-compose)
