@@ -12,24 +12,27 @@
 
     //**Page Header**//
     <string name="expenses_desc">
-        Jumlah dan seluruh riwayat transaksi Anda dalam
-        satu hari terakhir akan ditampilkan di sini.
+        Seluruh riwayat pengeluaran anda beserta totalnya
+        dalam 24 jam terakhir ditampilkan di sini. Anda juga
+        dapat menghapus tiap pengeluaran tersebut dengan
+        cara menekannya.
     </string>
     <string name="reports_desc">
-        Seluruh riwayat transaksi yang pernah Anda
-        lakukan akan ditampilkan disini beserta dengan
-        jumlah totalnya.
+        Seluruh riwayat pengeluaran anda beserta
+        totalnya berdasarkan waktu tertentu akan
+        ditampilkan di sini.
     </string>
     <string name="analytics_desc">
-        Seluruh transaksi yang pernah Anda lakukan
-        akan ditampilkan dalam bentuk diagram garis
-        dan dikelompokkan berdasarkan periode waktu
-        tertentu.
+        Seluruh riwayat transaksi anda pada halaman ini akan
+        ditampilkan dalam diagram garis. Anda juga dapat
+        menampilkan riwayat tersebut berdasarkan periode
+        waktu tertentu dengan cara menekan tombol yang
+        tersedia atau meng-swipe layar ke kanan atau ke kiri.
     </string>
     <string name="settings_desc">
         Pada halaman ini Anda dapat menghapus
-        seluruh riwayat transaksi dan melihat info
-        tentang aplikasi ini.
+        seluruh riwayat transaksi, mengubah bahasa,
+        dan melihat info tentang aplikasi ini.
     </string>
 
     //**Alert Dialog**//

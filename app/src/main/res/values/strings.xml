@@ -11,21 +11,24 @@
 
     //**Page Header**//
     <string name="expenses_desc">
-        The amount and your entire transaction history
-        for the past day will be displayed here.
+        Your entire spending history along with the total in the
+        last 24 hours is displayed here. You can also delete each
+        expense by tapping on it.
     </string>
     <string name="reports_desc">
-        Your entire transaction history will be displayed
-        here along with the total amount.
+        Your entire spending history and its total by time
+        will be displayed here.
     </string>
     <string name="analytics_desc">
-        All transactions you\'ve ever made will be
-        displayed in the form of a line chart and
-        grouped by time period.
+        Your entire transaction history on this page will be
+        displayed in a line chart. You can also view the history
+        based on a specific time period by pressing the button
+        or swiping the screen to the right or left.
     </string>
     <string name="settings_desc">
         On this page you can delete your entire
-        transaction history and view info about this app.
+        transaction history, change your language,
+        and view info about this app.
     </string>
 
     //**Alert Dialog**//
