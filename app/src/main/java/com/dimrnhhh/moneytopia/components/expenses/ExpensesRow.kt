@@ -13,11 +13,11 @@ import androidx.compose.material.icons.outlined.Category
 import androidx.compose.material.icons.outlined.ConfirmationNumber
 import androidx.compose.material.icons.outlined.CreditCard
 import androidx.compose.material.icons.outlined.Delete
-import androidx.compose.material.icons.outlined.FamilyRestroom
-import androidx.compose.material.icons.outlined.HealthAndSafety
+import androidx.compose.material.icons.outlined.Fastfood
+import androidx.compose.material.icons.outlined.House
 import androidx.compose.material.icons.outlined.LocalTaxi
-import androidx.compose.material.icons.outlined.Payment
-import androidx.compose.material.icons.outlined.Restaurant
+import androidx.compose.material.icons.outlined.MedicalServices
+import androidx.compose.material.icons.outlined.Payments
 import androidx.compose.material.icons.outlined.Savings
 import androidx.compose.material.icons.outlined.School
 import androidx.compose.material.icons.outlined.ShoppingBag
@@ -61,7 +61,7 @@ fun ExpensesRow(
     val backStackEntry by navController.currentBackStackEntryAsState()
     val categoryIcon = when (expense.category) {
         "Bill", "Tagihan" -> {
-            Icons.Outlined.Payment
+            Icons.Outlined.Payments
         }
         "Debt", "Hutang" -> {
             Icons.Outlined.CreditCard
@@ -73,13 +73,13 @@ fun ExpensesRow(
             Icons.Outlined.ConfirmationNumber
         }
         "Family", "Keluarga" -> {
-            Icons.Outlined.FamilyRestroom
+            Icons.Outlined.House
         }
         "Foods & Drinks", "Makan & Minum" -> {
-            Icons.Outlined.Restaurant
+            Icons.Outlined.Fastfood
         }
         "Healthcare", "Kesehatan" -> {
-            Icons.Outlined.HealthAndSafety
+            Icons.Outlined.MedicalServices
         }
         "Savings", "Tabungan" -> {
             Icons.Outlined.Savings
