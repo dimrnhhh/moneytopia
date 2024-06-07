@@ -1,7 +1,9 @@
 package com.dimrnhhh.moneytopia.components.expenses
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -58,37 +60,37 @@ fun ExpensesRow(
     val showBottomSheet = rememberSaveable { mutableStateOf(false) }
     val backStackEntry by navController.currentBackStackEntryAsState()
     val categoryIcon = when (expense.category) {
-        stringResource(R.string.bills) -> {
+        "Bill", "Tagihan" -> {
             Icons.Outlined.Payment
         }
-        stringResource(R.string.debt) -> {
+        "Debt", "Hutang" -> {
             Icons.Outlined.CreditCard
         }
-        stringResource(R.string.education) -> {
+        "Education", "Pendidikan" -> {
             Icons.Outlined.School
         }
-        stringResource(R.string.entertainment) -> {
+        "Entertainment", "Hiburan" -> {
             Icons.Outlined.ConfirmationNumber
         }
-        stringResource(R.string.family) -> {
+        "Family", "Keluarga" -> {
             Icons.Outlined.FamilyRestroom
         }
-        stringResource(R.string.foods_and_drinks) -> {
+        "Foods & Drinks", "Makan & Minum" -> {
             Icons.Outlined.Restaurant
         }
-        stringResource(R.string.healthcare) -> {
+        "Healthcare", "Kesehatan" -> {
             Icons.Outlined.HealthAndSafety
         }
-        stringResource(R.string.savings) -> {
+        "Savings", "Tabungan" -> {
             Icons.Outlined.Savings
         }
-        stringResource(R.string.shopping) -> {
+        "Shopping", "Belanja" -> {
             Icons.Outlined.ShoppingBag
         }
-        stringResource(R.string.top_up) -> {
+        "Top Up", "Isi Ulang" -> {
             Icons.Outlined.AddCard
         }
-        stringResource(R.string.transportation) -> {
+        "Transportation", "Transportasi" -> {
             Icons.Outlined.LocalTaxi
         }
         else -> {
@@ -104,19 +106,30 @@ fun ExpensesRow(
                     "expenses" -> {
                         showBottomSheet.value = true
                     }
+
                     "reports" -> {
                         showBottomSheet.value = false
                     }
+
                     "analytics" -> {
                         showBottomSheet.value = false
                     }
                 }
             },
         leadingContent = {
-            Icon(
-                imageVector = categoryIcon,
-                contentDescription = null
-            )
+            Box(
+                modifier = Modifier
+                    .clip(MaterialTheme.shapes.medium)
+                    .background(MaterialTheme.colorScheme.secondaryContainer)
+            ) {
+                Icon(
+                    modifier = Modifier
+                        .padding(10.dp),
+                    imageVector = categoryIcon,
+                    tint = MaterialTheme.colorScheme.primary,
+                    contentDescription = null
+                )
+            }
         },
         headlineContent = {
             Text(

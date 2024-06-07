@@ -19,7 +19,6 @@ import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.outlined.Delete
 import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material.icons.outlined.Language
-import androidx.compose.material.icons.outlined.Warning
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.ButtonColors
 import androidx.compose.material3.FilledTonalButton
@@ -194,28 +193,28 @@ fun SettingsPage(
                 .padding(horizontal = 16.dp),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            ListItem(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .clip(MaterialTheme.shapes.large),
-                leadingContent = {
-                    Icon(
-                        imageVector = Icons.Outlined.Warning,
-                        contentDescription = null,
-                        tint = MaterialTheme.colorScheme.error
-                    )
-                },
-                headlineContent = {
-                    Text(
-                        modifier = Modifier
-                            .padding(vertical = 8.dp),
-                        text = stringResource(R.string.warning),
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.error
-                    )
-                },
-                colors = ListItemDefaults.colors(MaterialTheme.colorScheme.errorContainer)
-            )
+//            ListItem(
+//                modifier = Modifier
+//                    .fillMaxWidth()
+//                    .clip(MaterialTheme.shapes.large),
+//                leadingContent = {
+//                    Icon(
+//                        imageVector = Icons.Outlined.Warning,
+//                        contentDescription = null,
+//                        tint = MaterialTheme.colorScheme.error
+//                    )
+//                },
+//                headlineContent = {
+//                    Text(
+//                        modifier = Modifier
+//                            .padding(vertical = 8.dp),
+//                        text = stringResource(R.string.warning),
+//                        style = MaterialTheme.typography.bodyMedium,
+//                        color = MaterialTheme.colorScheme.error
+//                    )
+//                },
+//                colors = ListItemDefaults.colors(MaterialTheme.colorScheme.errorContainer)
+//            )
             items.forEach {
                 ListItem(
                     modifier = Modifier
