@@ -33,7 +33,7 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
     <img src="art/4-dark-settings.webp" width="24%" alt="">
 </div>
 
-## Requirements (for developers)
+## Requirements (Developers)
 - Android Studio Jellyfish | 2023.3.1
 - Min SDK 28
 - Target SDK 34
@@ -41,7 +41,7 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
 - JDK 21
 - Kotlin 2.0.0
 
-## Dependencies (for developers)
+## Dependencies (Developers)
 - [Realm Kotlin](https://www.mongodb.com/docs/atlas/device-sdks/sdk/kotlin/install/)
 - [Kotlinx Coroutines Core](https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-core)
 - [Compose Navigation](https://mvnrepository.com/artifact/androidx.navigation/navigation-compose)
