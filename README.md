@@ -34,7 +34,7 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
 </div>
 
 ## Requirements (Developers)
-- Android Studio Jellyfish | 2023.3.1
+- Android Studio Koala | 2024.1.1
 - Min SDK 28
 - Target SDK 34
 - AGP 8.4.1
