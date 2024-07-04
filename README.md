@@ -38,7 +38,7 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
 - Min SDK 28
 - Target SDK 34
 - AGP 8.4.1
-- JDK 21
+- JDK 17
 - Kotlin 2.0.0
 
 ## Dependencies (Developers)
