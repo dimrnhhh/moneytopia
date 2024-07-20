@@ -37,8 +37,8 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
 ## Requirements (Developers)
 - Android Studio Koala | 2024.1.1
 - Min SDK 28
-- Target SDK 34
-- AGP 8.4.1
+- Target SDK 35
+- AGP 8.5.1
 - JDK 17
 - Kotlin 2.0.0
 
