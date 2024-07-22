@@ -2,9 +2,8 @@
 
 # Moneytopia
 A fully functional app for tracking personal expenses built using Jetpack Compose with a simple UI for easy understanding and ease of use.
-> [!WARNING]  
-> This app is currently not supported for Android devices version 11 and below.
-
+\
+\
 [<img src="art/get-it-on-github.webp" alt="Get it on GitHub" height="60">](https://github.com/dimrnhhh/moneytopia/releases/latest)
 
 ## Features
