@@ -107,7 +107,7 @@ fun SettingsPage(
             }
         }
     ) { contentPadding ->
-        val items = listOf(
+        val items = mutableListOf(
             MenuSettingItem(
                 headlineContent = stringResource(R.string.del_button),
                 leadingContent = Icons.Outlined.Delete,
@@ -129,7 +129,11 @@ fun SettingsPage(
                 onClick = { navController.navigate("settings/about") }
             )
         )
-        
+
+        if(Build.VERSION.SDK_INT < Build.VERSION_CODES.S) {
+            items.removeAt(1)
+        }
+
         if(deleteAlertDialog) {
             AlertDialog(
                 onDismissRequest = { deleteAlertDialog = false },
