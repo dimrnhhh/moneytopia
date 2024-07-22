@@ -50,4 +50,3 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
 - [AppCompat](https://mvnrepository.com/artifact/androidx.appcompat/appcompat)
 - [Compose Material Icons Extended](https://mvnrepository.com/artifact/androidx.compose.material/material-icons-extended)
 - [Vico Compose Chart](https://patrykandpatrick.com/vico/wiki/1.14.0/getting-started)
-- [Accompanist System UI Controller Library (Deprecated)](https://mvnrepository.com/artifact/com.google.accompanist/accompanist-systemuicontroller)
