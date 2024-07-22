@@ -73,7 +73,6 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.kotlinx.coroutines.core)
     implementation(libs.realm.kotlin)
-    implementation(libs.google.accompanist.systemuicontroller)
     implementation(libs.patrykandpatrick.vico.core)
     implementation(libs.patrykandpatrick.vico.compose)
     implementation(libs.patrykandpatrick.vico.compose.m3)
