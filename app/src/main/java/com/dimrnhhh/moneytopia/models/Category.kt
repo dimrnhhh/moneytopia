@@ -9,7 +9,6 @@ import androidx.compose.material.icons.outlined.FoodBank
 import androidx.compose.material.icons.outlined.House
 import androidx.compose.material.icons.outlined.LocalTaxi
 import androidx.compose.material.icons.outlined.MedicalServices
-import androidx.compose.material.icons.outlined.Payment
 import androidx.compose.material.icons.outlined.Payments
 import androidx.compose.material.icons.outlined.Savings
 import androidx.compose.material.icons.outlined.School
