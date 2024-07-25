@@ -52,6 +52,8 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.dimrnhhh.moneytopia.R
+import com.dimrnhhh.moneytopia.models.Category
+import com.dimrnhhh.moneytopia.models.getName
 import com.dimrnhhh.moneytopia.viewmodels.AddExpenseViewModel
 import com.marosseleng.compose.material3.datetimepickers.date.ui.dialog.DatePickerDialog
 import kotlinx.coroutines.launch
@@ -64,18 +66,17 @@ fun AddExpensePage(
 ) {
     val state by viewModel.uiState.collectAsState()
     val categories = listOf(
-        stringResource(R.string.bills),
-        stringResource(R.string.debt),
-        stringResource(R.string.education),
-        stringResource(R.string.entertainment),
-        stringResource(R.string.family),
-        stringResource(R.string.foods_and_drinks),
-        stringResource(R.string.healthcare),
-        stringResource(R.string.savings),
-        stringResource(R.string.shopping),
-        stringResource(R.string.top_up),
-        stringResource(R.string.transportation),
-        stringResource(R.string.others)
+        Category.Bills.getName(),
+        Category.Education.getName(),
+        Category.Family.getName(),
+        Category.FoodsAndDrinks.getName(),
+        Category.Healthcare.getName(),
+        Category.Savings.getName(),
+        Category.Shopping.getName(),
+        Category.SocialEvents.getName(),
+        Category.TopUp.getName(),
+        Category.Transportation.getName(),
+        Category.Others.getName(),
     )
     var expanded by remember {
         mutableStateOf(false)

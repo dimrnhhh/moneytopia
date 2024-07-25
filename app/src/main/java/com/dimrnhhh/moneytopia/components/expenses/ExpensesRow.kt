@@ -8,19 +8,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.outlined.AddCard
-import androidx.compose.material.icons.outlined.Category
-import androidx.compose.material.icons.outlined.ConfirmationNumber
-import androidx.compose.material.icons.outlined.CreditCard
 import androidx.compose.material.icons.outlined.Delete
-import androidx.compose.material.icons.outlined.Fastfood
-import androidx.compose.material.icons.outlined.House
-import androidx.compose.material.icons.outlined.LocalTaxi
-import androidx.compose.material.icons.outlined.MedicalServices
-import androidx.compose.material.icons.outlined.Payments
-import androidx.compose.material.icons.outlined.Savings
-import androidx.compose.material.icons.outlined.School
-import androidx.compose.material.icons.outlined.ShoppingBag
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ListItem
@@ -44,7 +32,10 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.dimrnhhh.moneytopia.R
+import com.dimrnhhh.moneytopia.models.Category
 import com.dimrnhhh.moneytopia.models.Expense
+import com.dimrnhhh.moneytopia.models.getIcon
+import com.dimrnhhh.moneytopia.models.getName
 import com.dimrnhhh.moneytopia.viewmodels.ExpensesViewModel
 import java.text.DecimalFormat
 import java.time.format.DateTimeFormatter
@@ -59,43 +50,20 @@ fun ExpensesRow(
     val sheetState = rememberModalBottomSheetState()
     val showBottomSheet = rememberSaveable { mutableStateOf(false) }
     val backStackEntry by navController.currentBackStackEntryAsState()
+
     val categoryIcon = when (expense.category) {
-        "Bill", "Tagihan" -> {
-            Icons.Outlined.Payments
-        }
-        "Debt", "Hutang" -> {
-            Icons.Outlined.CreditCard
-        }
-        "Education", "Pendidikan" -> {
-            Icons.Outlined.School
-        }
-        "Entertainment", "Hiburan" -> {
-            Icons.Outlined.ConfirmationNumber
-        }
-        "Family", "Keluarga" -> {
-            Icons.Outlined.House
-        }
-        "Foods & Drinks", "Makan & Minum" -> {
-            Icons.Outlined.Fastfood
-        }
-        "Healthcare", "Kesehatan" -> {
-            Icons.Outlined.MedicalServices
-        }
-        "Savings", "Tabungan" -> {
-            Icons.Outlined.Savings
-        }
-        "Shopping", "Belanja" -> {
-            Icons.Outlined.ShoppingBag
-        }
-        "Top Up", "Isi Ulang" -> {
-            Icons.Outlined.AddCard
-        }
-        "Transportation", "Transportasi" -> {
-            Icons.Outlined.LocalTaxi
-        }
-        else -> {
-            Icons.Outlined.Category
-        }
+        Category.Bills.getName() -> Category.Bills.getIcon()
+        Category.Debt.getName() -> Category.Debt.getIcon()
+        Category.Education.getName() -> Category.Education.getIcon()
+        Category.Family.getName() -> Category.Family.getIcon()
+        Category.FoodsAndDrinks.getName() -> Category.FoodsAndDrinks.getIcon()
+        Category.Healthcare.getName() -> Category.Healthcare.getIcon()
+        Category.Savings.getName() -> Category.Savings.getIcon()
+        Category.Shopping.getName() -> Category.Shopping.getIcon()
+        Category.SocialEvents.getName() -> Category.SocialEvents.getIcon()
+        Category.TopUp.getName() -> Category.TopUp.getIcon()
+        Category.Transportation.getName() -> Category.Transportation.getIcon()
+        else -> { Category.Others.getIcon() }
     }
     ListItem(
         modifier = Modifier
