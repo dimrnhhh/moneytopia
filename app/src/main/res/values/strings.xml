@@ -99,7 +99,7 @@
         These build WILL contain bugs, broken features,
         and unexpected crashes. Use at your own risk!
     </string>
-    <string name="delete_transactions">Delete all transactions?</string>
+    <string name="delete_transactions">Delete transactions?</string>
     <string name="delete_desc">
         All transactions you have will be deleted and
         cannot be canceled.
@@ -107,6 +107,15 @@
     <string name="delete_cancel">Cancel</string>
     <string name="delete_confirmation">Delete</string>
     <string name="transaction_deleted">Transaction deleted</string>
+
+    //**Change Language**//
+    <string name="caution">Caution!</string>
+    <string name="caution_desc">
+        To change the application language all existing
+        transaction records will be deleted first, do
+        you want to continue?
+    </string>
+    <string name="caution_confirmation">Yes, continue</string>
 
     //**About Page**//
     <string name="contrib_label">Contributors</string>

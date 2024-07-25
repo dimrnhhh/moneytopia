@@ -103,7 +103,7 @@
         Versi ini AKAN mengandung bug, fitur yang rusak,
         dan kerusakan yang tidak terduga. Gunakan dengan risiko Anda sendiri!
     </string>
-    <string name="delete_transactions">Hapus semua transaksi ?</string>
+    <string name="delete_transactions">Hapus transaksi?</string>
     <string name="delete_desc">
         Semua transaksi yang Anda lakukan akan dihapus dan
         tidak dapat dibatalkan.
@@ -111,6 +111,16 @@
     <string name="delete_cancel">Batal</string>
     <string name="delete_confirmation">Hapus</string>
     <string name="transaction_deleted">Transaksi dihapus</string>
+
+    //**Change Language**//
+    <string name="caution">Perhatian!</string>
+    <string name="caution_desc">
+        Untuk mengganti bahasa apilikasi seluruh
+        catatan transaksi yang ada akan dihapus
+        terlebih dahulu, apakah anda ingin
+        melanjutkannya?
+    </string>
+    <string name="caution_confirmation">Ya, lanjutkan</string>
 
     //**About Page**//
     <string name="contrib_label">Kontributor</string>
