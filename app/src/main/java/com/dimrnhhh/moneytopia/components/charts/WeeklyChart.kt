@@ -27,9 +27,7 @@ import java.time.DayOfWeek
 import com.patrykandpatrick.vico.core.chart.line.LineChart.LineSpec
 import com.patrykandpatrick.vico.core.component.shape.shader.DynamicShaders
 import com.patrykandpatrick.vico.core.component.text.textComponent
-import com.patrykandpatrick.vico.core.entry.ChartEntryModelProducer
 import com.patrykandpatrick.vico.core.entry.entryModelOf
-import com.patrykandpatrick.vico.core.entry.entryOf
 
 @Composable
 fun WeeklyChart(
@@ -54,10 +52,6 @@ fun WeeklyChart(
         stringResource(R.string.Saturday),
         stringResource(R.string.Sunday),
     )
-    /*fun getWeeklyEntries() = List(daysOfWeek.size) {
-        entryOf(it, chartEntryModel[it])
-    }*/
-    /*val chartEntryModelProducer = ChartEntryModelProducer(getWeeklyEntries())*/
     val bottomAxisValueFormatter = AxisValueFormatter<AxisPosition.Horizontal.Bottom> {
             x, _ -> daysOfWeek[x.toInt() % daysOfWeek.size]
     }
@@ -82,7 +76,6 @@ fun WeeklyChart(
                     )
                 )
             ),
-            /*chartModelProducer = chartEntryModelProducer,*/
             model = chartEntryModel,
             startAxis = rememberStartAxis(
                 label = textComponent{
