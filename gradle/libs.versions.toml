@@ -18,6 +18,7 @@ composeMaterial3DatetimePickers = "0.7.2"
 lifecycleViewmodelCompose = "2.8.4"
 appcompat = "1.7.0"
 vicoCompose = "1.15.0"
+uiTextAndroid = "1.6.8"
 
 [libraries]
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
@@ -45,6 +46,7 @@ androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "a
 patrykandpatrick-vico-core = { module = "com.patrykandpatrick.vico:core", version.ref = "vicoCompose" }
 patrykandpatrick-vico-compose = { module = "com.patrykandpatrick.vico:compose", version.ref = "vicoCompose" }
 patrykandpatrick-vico-compose-m3 = { module = "com.patrykandpatrick.vico:compose-m3", version.ref = "vicoCompose" }
+androidx-ui-text-android = { group = "androidx.compose.ui", name = "ui-text-android", version.ref = "uiTextAndroid" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
