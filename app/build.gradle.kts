@@ -77,7 +77,6 @@ dependencies {
     implementation(libs.patrykandpatrick.vico.compose)
     implementation(libs.patrykandpatrick.vico.compose.m3)
     implementation(libs.marosseleng.compose.material3.datetime.pickers)
-    implementation(libs.androidx.ui.text.android)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
