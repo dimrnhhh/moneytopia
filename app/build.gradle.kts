@@ -1,3 +1,5 @@
+import com.android.build.gradle.internal.api.ApkVariantOutputImpl
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.org.jetbrains.kotlin.android)
@@ -42,6 +44,7 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
     composeCompiler {
         enableStrongSkippingMode = true
@@ -54,6 +57,12 @@ android {
     dependenciesInfo {
         includeInApk = false
         includeInBundle = false
+    }
+    applicationVariants.all {
+        outputs.all {
+            (this as? ApkVariantOutputImpl)?.outputFileName =
+                "Moneytopia.v$versionName.apk"
+        }
     }
 }
 
