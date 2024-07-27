@@ -154,6 +154,7 @@ fun ExpensesRow(
                 headlineContent = {
                     Text(
                         text = stringResource(R.string.delete_transaction),
+                        fontWeight = FontWeight.SemiBold,
                         color = MaterialTheme.colorScheme.error
                     )
                 }
