@@ -111,7 +111,7 @@
     //**Change Language**//
     <string name="caution">Caution!</string>
     <string name="caution_desc">
-        To change the application language all existing
+        To change the application language, all existing
         transaction records will be deleted first, do
         you want to continue?
     </string>
