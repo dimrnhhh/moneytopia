@@ -34,12 +34,12 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
 </div>
 
 ## Requirements (Developers)
-- Android Studio Koala | 2024.1.1
+- Android Studio Ladybug | 2024.2.1
 - Min SDK 28
 - Target SDK 35
-- AGP 8.5.1
+- AGP 8.7.0
 - JDK 17
-- Kotlin 2.0.0
+- Kotlin 2.0.21
 
 ## Dependencies (Developers)
 - [Realm Kotlin](https://www.mongodb.com/docs/atlas/device-sdks/sdk/kotlin/install/)
