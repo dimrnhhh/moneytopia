@@ -2,7 +2,7 @@
 activityCompose = "1.9.3"
 agp = "8.7.1"
 composeBom = "2024.10.00"
-coreKtx = "1.13.1"
+coreKtx = "1.15.0"
 espressoCore = "3.6.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
