@@ -9,7 +9,7 @@ plugins {
 
 android {
     namespace = "com.dimrnhhh.moneytopia"
-    compileSdk = 34
+    compileSdk = 35
     defaultConfig {
         applicationId = "com.dimrnhhh.moneytopia"
         minSdk = 28
@@ -45,9 +45,6 @@ android {
     buildFeatures {
         compose = true
         buildConfig = true
-    }
-    composeCompiler {
-        enableStrongSkippingMode = true
     }
     packaging {
         resources {
