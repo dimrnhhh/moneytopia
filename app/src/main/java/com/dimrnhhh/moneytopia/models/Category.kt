@@ -3,12 +3,12 @@ package com.dimrnhhh.moneytopia.models
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.AddCard
 import androidx.compose.material.icons.outlined.Category
+import androidx.compose.material.icons.outlined.Cottage
 import androidx.compose.material.icons.outlined.CreditCard
-import androidx.compose.material.icons.outlined.Event
-import androidx.compose.material.icons.outlined.FoodBank
-import androidx.compose.material.icons.outlined.House
+import androidx.compose.material.icons.outlined.Diversity1
+import androidx.compose.material.icons.outlined.Fastfood
 import androidx.compose.material.icons.outlined.LocalTaxi
-import androidx.compose.material.icons.outlined.MedicalServices
+import androidx.compose.material.icons.outlined.MonitorHeart
 import androidx.compose.material.icons.outlined.Payments
 import androidx.compose.material.icons.outlined.Savings
 import androidx.compose.material.icons.outlined.School
@@ -57,12 +57,12 @@ fun Category.getIcon(): ImageVector {
         Category.Bills -> Icons.Outlined.Payments
         Category.Debt -> Icons.Outlined.CreditCard
         Category.Education -> Icons.Outlined.School
-        Category.Family -> Icons.Outlined.House
-        Category.FoodsAndDrinks -> Icons.Outlined.FoodBank
-        Category.Healthcare -> Icons.Outlined.MedicalServices
+        Category.Family -> Icons.Outlined.Cottage
+        Category.FoodsAndDrinks -> Icons.Outlined.Fastfood
+        Category.Healthcare -> Icons.Outlined.MonitorHeart
         Category.Savings -> Icons.Outlined.Savings
         Category.Shopping -> Icons.Outlined.ShoppingBag
-        Category.SocialEvents -> Icons.Outlined.Event
+        Category.SocialEvents -> Icons.Outlined.Diversity1
         Category.TopUp -> Icons.Outlined.AddCard
         Category.Transportation -> Icons.Outlined.LocalTaxi
         Category.Others -> Icons.Outlined.Category

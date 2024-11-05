@@ -67,6 +67,7 @@ fun AddExpensePage(
     val state by viewModel.uiState.collectAsState()
     val categories = listOf(
         Category.Bills.getName(),
+        Category.Debt.getName(),
         Category.Education.getName(),
         Category.Family.getName(),
         Category.FoodsAndDrinks.getName(),
