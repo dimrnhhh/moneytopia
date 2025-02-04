@@ -10,8 +10,8 @@
   },
   "packageRules": [
     {
-      "matchPackageNames": ["vicoCompose"],
-      "allowedVersions": ">2.0.1"
+      "matchPackageNames": ["com.patrykandpatrick.vico"],
+      "allowedVersions": "<2.0.1"
     }
   ]
 }
