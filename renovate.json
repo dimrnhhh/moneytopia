@@ -7,5 +7,11 @@
   "lockFileMaintenance": {
     "enabled": true,
     "automerge": true
-  }
+  },
+  "packageRules": [
+    {
+      "matchPackageNames": ["vicoCompose"],
+      "allowedVersions": ">2.0.1"
+    }
+  ]
 }
