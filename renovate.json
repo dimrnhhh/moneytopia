@@ -14,7 +14,7 @@
       "allowedVersions": "<2.0.1"
     },
     {
-      "matchPackageNames": ["org.jetbrains.kotlin"],
+      "matchPackageNames": ["org.jetbrains.kotlin.android", "org.jetbrains.kotlin.plugin.compose"],
       "allowedVersions": "<2.1.0"
     }
   ]
