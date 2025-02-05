@@ -37,16 +37,16 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
 - Android Studio Ladybug | 2024.2.1
 - Min SDK 28
 - Target SDK 35
-- AGP 8.7.0
-- JDK 17
+- AGP 8.8.0
+- JDK 21
 - Kotlin 2.0.21
 
 ## Dependencies (Developers)
-- [Realm Kotlin](https://www.mongodb.com/docs/atlas/device-sdks/sdk/kotlin/install/)
+- [Realm Kotlin (Deprecated)](https://www.mongodb.com/docs/atlas/device-sdks/sdk/kotlin/install/)
 - [Kotlinx Coroutines Core](https://mvnrepository.com/artifact/org.jetbrains.kotlinx/kotlinx-coroutines-core)
 - [Compose Navigation](https://mvnrepository.com/artifact/androidx.navigation/navigation-compose)
 - [Compose Compiler Gradle Plugin](https://mvnrepository.com/artifact/org.jetbrains.kotlin.plugin.compose/org.jetbrains.kotlin.plugin.compose.gradle.plugin)
 - [Lifecycle ViewModel Compose](https://mvnrepository.com/artifact/androidx.lifecycle/lifecycle-viewmodel-compose)
 - [AppCompat](https://mvnrepository.com/artifact/androidx.appcompat/appcompat)
 - [Compose Material Icons Extended](https://mvnrepository.com/artifact/androidx.compose.material/material-icons-extended)
-- [Vico Compose Chart](https://patrykandpatrick.com/vico/wiki/1.14.0/getting-started)
+- [Vico Compose Chart](https://github.com/patrykandpatrick/vico/tree/v1.16.1)
