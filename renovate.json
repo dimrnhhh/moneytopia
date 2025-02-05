@@ -12,6 +12,10 @@
     {
       "matchPackageNames": ["com.patrykandpatrick.vico"],
       "allowedVersions": "<2.0.1"
+    },
+    {
+      "matchPackageNames": ["org.jetbrains.kotlin"],
+      "allowedVersions": "<2.1.0"
     }
   ]
 }
