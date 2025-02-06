@@ -76,10 +76,8 @@
 
     //**Reports Page**//
     <string name="empty_reports">
-        <string name="empty_reports">
         The transaction record is not yet available, please
         add it first on the expense page.
-    </string>
     </string>
 
     //**Analytics Page**//
