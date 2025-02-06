@@ -4,7 +4,8 @@
 A fully functional app for tracking personal expenses built using Jetpack Compose with a simple UI for easy understanding and ease of use.
 \
 \
-[<img src="art/get-it-on-github.webp" alt="Get it on GitHub" height="60">](https://github.com/dimrnhhh/moneytopia/releases/latest)
+[<img src="art/get-it-on-github.webp" alt="Get it on GitHub" height="80">](https://github.com/dimrnhhh/moneytopia/releases/latest)
+[<img src="art/get-it-on-izzyondroid.webp" alt="Get it on GitHub" height="80">](https://github.com/dimrnhhh/moneytopia/releases/latest)
 
 ## Features
 - Material 3 (Material You) UI with Dynamic Color
