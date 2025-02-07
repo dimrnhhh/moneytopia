@@ -11,24 +11,21 @@
 
     //**Page Header**//
     <string name="expenses_desc">
-        Your entire spending history along with the total in the
-        last 24 hours is displayed here. You can also delete each
-        expense by tapping on it.
+        Your entire transaction history in the last 24 hours
+        will be displayed here. You can also delete the transaction
+        by clicking on it.
     </string>
     <string name="reports_desc">
-        Your entire spending history and its total by time
-        will be displayed here.
+        Your entire transaction history will be fully displayed here.
     </string>
     <string name="analytics_desc">
-        Your entire transaction history on this page will be
-        displayed in a line chart. You can also view the history
-        based on a specific time period by pressing the button
-        or swiping the screen to the right or left.
+        Your entire transaction history on this page will be displayed
+        in a line chart. You can also swipe the screen to view
+        the transaction history based on a specific time range.
     </string>
     <string name="settings_desc">
-        On this page you can delete your entire
-        transaction history, change your language,
-        and view info about this app.
+        On this page you can delete the entire transaction history,
+        change the app language, and view information about the app.
     </string>
 
     //**Alert Dialog**//
@@ -42,8 +39,8 @@
     <string name="total_currency">- $</string>
     <string name="number_format">#,###.##</string>
     <string name="empty_expenses">
-        Transaction records are not yet available, please
-        add it first by clicking the + button.
+        Transaction history is not available, please add
+        it first by clicking the + button.
     </string>
 
     //**Add Expenses Page**//
@@ -76,14 +73,13 @@
 
     //**Reports Page**//
     <string name="empty_reports">
-        The transaction record is not yet available, please
-        add it first on the expense page.
+        Transaction history is not yet available, please add
+        it first on the expense page.
     </string>
 
     //**Analytics Page**//
     <string name="empty_analytics">
-        Transaction records for this time period are not
-        available.
+        Transaction history for this time period is not available.
     </string>
 
     //**Settings Page**//
@@ -99,19 +95,20 @@
     </string>
     <string name="delete_transactions">Delete transactions?</string>
     <string name="delete_desc">
-        All transactions you have will be deleted and
-        cannot be canceled.
+        All transaction history that you have created will be deleted
+        and cannot be canceled.
     </string>
     <string name="delete_cancel">Cancel</string>
     <string name="delete_confirmation">Delete</string>
-    <string name="transaction_deleted">Transaction deleted</string>
+    <string name="transaction_deleted">
+        The entire transaction history was successfully deleted
+    </string>
 
     //**Change Language**//
     <string name="caution">Caution!</string>
     <string name="caution_desc">
-        To change the application language, all existing
-        transaction records will be deleted first, do
-        you want to continue?
+        To change the app language, all existing transaction history
+        will be deleted first, do you want to continue?
     </string>
     <string name="caution_confirmation">Yes, continue</string>
 

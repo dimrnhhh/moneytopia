@@ -12,27 +12,22 @@
 
     //**Page Header**//
     <string name="expenses_desc">
-        Seluruh riwayat pengeluaran anda beserta totalnya
-        dalam 24 jam terakhir ditampilkan di sini. anda juga
-        dapat menghapus tiap pengeluaran tersebut dengan
-        cara menekannya.
+        Seluruh riwayat transaksi anda dalam 24 jam terakhir
+        akan ditampilkan di sini. Anda juga dapat menghapus transaksi
+        tersebut dengan cara mengeklik-nya.
     </string>
     <string name="reports_desc">
-        Seluruh riwayat pengeluaran anda beserta
-        totalnya berdasarkan waktu tertentu akan
+        Seluruh riwayat transaksi yang pernah Anda lakukan akan sepenuhnya
         ditampilkan di sini.
     </string>
     <string name="analytics_desc">
-        Seluruh riwayat transaksi anda pada halaman ini akan
-        ditampilkan dalam diagram garis. Anda juga dapat
-        menampilkan riwayat tersebut berdasarkan periode
-        waktu tertentu dengan cara menekan tombol yang
-        tersedia atau meng-swipe layar ke kanan atau ke kiri.
+        Seluruh riwayat transaksi Anda pada halaman ini akan ditampilkan
+        dalam diagram garis. Anda juga dapat menggeser layar untuk melihat
+        riwayat transaksi berdasarkan rentang waktu tertentu.
     </string>
     <string name="settings_desc">
-        Pada halaman ini anda dapat menghapus
-        seluruh riwayat transaksi, mengubah bahasa,
-        dan melihat info tentang aplikasi ini.
+        Pada halaman ini Anda dapat menghapus seluruh riwayat transaksi,
+        mengubah bahasa aplikasi, dan melihat informasi tentang aplikasi.
     </string>
 
     //**Alert Dialog**//
@@ -46,9 +41,8 @@
     <string name="total_currency">- Rp</string>
     <string name="number_format">#,###.##</string>
     <string name="empty_expenses">
-        Catatan transaksi belum tersedia, silahkan
-        tambahkan terlebih dahulu dengan mengklik
-        tombol +.
+        Riwayat transaksi belum tersedia, silahkan tambahkan
+        terlebih dahulu dengan mengeklik tombol +.
     </string>
 
     //**Add Expenses Page**//
@@ -66,15 +60,13 @@
 
     //**Reports Page//
     <string name="empty_reports">
-        Catatan transaksi belum tersedia, silahkan
-        tambahkan terlebih dahulu di halaman
-        pengeluaran.
+        Riwayat transaksi belum tersedia, silahkan tambahkan
+        terlebih dahulu di halaman pengeluaran.
     </string>
 
     //**Analytics Page**//
     <string name="empty_analytics">
-        Catatan transaksi pada periode waktu ini tidak
-        tersedia.
+        Riwayat transaksi pada rentang waktu ini tidak tersedia.
     </string>
 
     //**Categories**//
@@ -105,20 +97,20 @@
     </string>
     <string name="delete_transactions">Hapus transaksi?</string>
     <string name="delete_desc">
-        Semua transaksi yang anda lakukan akan dihapus dan
-        tidak dapat dibatalkan.
+        Seluruh riwayat transaksi yang telah Anda buat akan dihapus
+        dan tidak bisa dibatalkan.
     </string>
     <string name="delete_cancel">Batal</string>
     <string name="delete_confirmation">Hapus</string>
-    <string name="transaction_deleted">Transaksi dihapus</string>
+    <string name="transaction_deleted">
+        Seluruh riwayat transaksi berhasil dihapus
+    </string>
 
     //**Change Language**//
     <string name="caution">Perhatian!</string>
     <string name="caution_desc">
-        Untuk mengganti bahasa apilikasi, seluruh
-        catatan transaksi yang ada akan dihapus
-        terlebih dahulu, apakah anda ingin
-        melanjutkannya?
+        Untuk mengubah bahasa aplikasi, seluruh riwayat transaksi yang ada
+        akan dihapus terlebih dahulu, apakah anda ingin melanjutkannya?
     </string>
     <string name="caution_confirmation">Ya, lanjutkan</string>
 
