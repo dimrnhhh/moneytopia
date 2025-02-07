@@ -53,7 +53,7 @@ fun AboutPage(
 ) {
     val context = LocalContext.current
     val openGitHub = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/dimrnhhh"))
-    val openBehance= Intent(Intent.ACTION_VIEW, Uri.parse("https://www.behance.net/dimrnhhh"))
+    val openKofi= Intent(Intent.ACTION_VIEW, Uri.parse("https://ko-fi.com/dimrnhhh"))
     val openLinkedIn= Intent(Intent.ACTION_VIEW, Uri.parse("https://www.linkedin.com/in/dimrnhhh/"))
     val openInstagram= Intent(Intent.ACTION_VIEW, Uri.parse("https://www.instagram.com/dimrnhhh/"))
     val packageManager = context.packageManager
@@ -121,9 +121,9 @@ fun AboutPage(
                         onClick = { context.startActivity(openGitHub) }
                     )
                     SocialMedia(
-                        icon = ImageVector.vectorResource(R.drawable.ic_behance),
-                        title = "Behance",
-                        onClick = { context.startActivity(openBehance) }
+                        icon = ImageVector.vectorResource(R.drawable.ic_kofi),
+                        title = "Ko-fi",
+                        onClick = { context.startActivity(openKofi) }
                     )
                     SocialMedia(
                         icon = ImageVector.vectorResource(R.drawable.ic_linkedin),
