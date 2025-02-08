@@ -10,23 +10,10 @@
     <string name="delete_transaction">Delete transaction</string>
 
     //**Page Header**//
-    <string name="expenses_desc">
-        Your entire transaction history in the last 24 hours
-        will be displayed here. You can also delete the transaction
-        by clicking on it.
-    </string>
-    <string name="reports_desc">
-        Your entire transaction history will be fully displayed here.
-    </string>
-    <string name="analytics_desc">
-        Your entire transaction history on this page will be displayed
-        in a line chart. You can also swipe the screen to view
-        the transaction history based on a specific time range.
-    </string>
-    <string name="settings_desc">
-        On this page you can delete the entire transaction history,
-        change the app language, and view information about the app.
-    </string>
+    <string name="expenses_desc">Your entire transaction history in the last 24 hours will be displayed here. You can also delete the transaction by clicking on it.</string>
+    <string name="reports_desc"> Your entire transaction history will be fully displayed here.</string>
+    <string name="analytics_desc"> Your entire transaction history on this page will be displayed in a line chart. You can also swipe the screen to view the transaction history based on a specific time range.</string>
+    <string name="settings_desc"> On this page you can delete the entire transaction history, change the app language, and view information about the app.</string>
 
     //**Alert Dialog**//
     <string name="alert_button">OK</string>
@@ -38,10 +25,7 @@
     <string name="currency">$</string>
     <string name="total_currency">- $</string>
     <string name="number_format">#,###.##</string>
-    <string name="empty_expenses">
-        Transaction history is not available, please add
-        it first by clicking the + button.
-    </string>
+    <string name="empty_expenses"> Transaction history is not available, please add it first by clicking the + button.</string>
 
     //**Add Expenses Page**//
     <string name="add_expense_title">Add Expense</string>
@@ -72,15 +56,10 @@
     <string name="others">Others</string>
 
     //**Reports Page**//
-    <string name="empty_reports">
-        Transaction history is not yet available, please add
-        it first on the expense page.
-    </string>
+    <string name="empty_reports"> Transaction history is not yet available, please add it first on the expense page.</string>
 
     //**Analytics Page**//
-    <string name="empty_analytics">
-        Transaction history for this time period is not available.
-    </string>
+    <string name="empty_analytics">Transaction history for this time period is not available.</string>
 
     //**Settings Page**//
     <string name="del_button">Delete</string>
@@ -88,28 +67,16 @@
     <string name="lang_button">Language</string>
     <string name="lang_desc">Change Language</string>
     <string name="about_button">About</string>
-    <string name="warning">
-        Warning: You are currently using a development build.
-        These build WILL contain bugs, broken features,
-        and unexpected crashes. Use at your own risk!
-    </string>
+    <string name="warning"> Warning: You are currently using a development build. These build WILL contain bugs, broken features, and unexpected crashes. Use at your own risk!</string>
     <string name="delete_transactions">Delete transactions?</string>
-    <string name="delete_desc">
-        All transaction history that you have created will be deleted
-        and cannot be canceled.
-    </string>
+    <string name="delete_desc">All transaction history that you have created will be deleted and cannot be canceled.</string>
     <string name="delete_cancel">Cancel</string>
     <string name="delete_confirmation">Delete</string>
-    <string name="transaction_deleted">
-        The entire transaction history was successfully deleted
-    </string>
+    <string name="transaction_deleted">The entire transaction history was successfully deleted</string>
 
     //**Change Language**//
     <string name="caution">Caution!</string>
-    <string name="caution_desc">
-        To change the app language, all existing transaction history
-        will be deleted first, do you want to continue?
-    </string>
+    <string name="caution_desc">To change the app language, all existing transaction history will be deleted first, do you want to continue?</string>
     <string name="caution_confirmation">Yes, continue</string>
 
     //**About Page**//
