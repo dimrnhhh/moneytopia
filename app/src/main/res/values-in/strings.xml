@@ -6,10 +6,7 @@
     <string name="analytics_title">Analisis</string>
     <string name="settings_title">Pengaturan</string>
     <string name="delete_transaction">Hapus transaksi</string>
-    <string name="expenses_desc">        Seluruh riwayat transaksi anda dalam 24 jam terakhir
-        akan ditampilkan di sini. Anda juga dapat menghapus transaksi
-        tersebut dengan cara mengeklik-nya.
-    </string>
+    <string name="expenses_desc">Seluruh riwayat transaksi anda dalam 24 jam terakhir akan ditampilkan di sini. Anda juga dapat menghapus transaksi tersebut dengan cara mengeklik-nya.</string>
     <string name="reports_desc">Seluruh riwayat transaksi yang pernah Anda lakukan akan sepenuhnya ditampilkan di sini.</string>
     <string name="analytics_desc">Seluruh riwayat transaksi Anda pada halaman ini akan ditampilkan dalam diagram garis. Anda juga dapat menggeser layar untuk melihat riwayat transaksi berdasarkan rentang waktu tertentu.</string>
     <string name="settings_desc">Pada halaman ini Anda dapat menghapus seluruh riwayat transaksi, mengubah bahasa aplikasi, dan melihat informasi tentang aplikasi.</string>
