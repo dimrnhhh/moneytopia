@@ -1,51 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Moneytopia</string>
-
-    //**Main**//
-    //**Title**//
     <string name="expenses_title">Pengeluaran</string>
     <string name="reports_title">Laporan</string>
     <string name="analytics_title">Analisis</string>
     <string name="settings_title">Pengaturan</string>
     <string name="delete_transaction">Hapus transaksi</string>
-
-    //**Page Header**//
-    <string name="expenses_desc">
-        Seluruh riwayat transaksi anda dalam 24 jam terakhir
+    <string name="expenses_desc">        Seluruh riwayat transaksi anda dalam 24 jam terakhir
         akan ditampilkan di sini. Anda juga dapat menghapus transaksi
         tersebut dengan cara mengeklik-nya.
     </string>
-    <string name="reports_desc">
-        Seluruh riwayat transaksi yang pernah Anda lakukan akan sepenuhnya
-        ditampilkan di sini.
-    </string>
-    <string name="analytics_desc">
-        Seluruh riwayat transaksi Anda pada halaman ini akan ditampilkan
-        dalam diagram garis. Anda juga dapat menggeser layar untuk melihat
-        riwayat transaksi berdasarkan rentang waktu tertentu.
-    </string>
-    <string name="settings_desc">
-        Pada halaman ini Anda dapat menghapus seluruh riwayat transaksi,
-        mengubah bahasa aplikasi, dan melihat informasi tentang aplikasi.
-    </string>
-
-    //**Alert Dialog**//
+    <string name="reports_desc">Seluruh riwayat transaksi yang pernah Anda lakukan akan sepenuhnya ditampilkan di sini.</string>
+    <string name="analytics_desc">Seluruh riwayat transaksi Anda pada halaman ini akan ditampilkan dalam diagram garis. Anda juga dapat menggeser layar untuk melihat riwayat transaksi berdasarkan rentang waktu tertentu.</string>
+    <string name="settings_desc">Pada halaman ini Anda dapat menghapus seluruh riwayat transaksi, mengubah bahasa aplikasi, dan melihat informasi tentang aplikasi.</string>
     <string name="alert_button">Oke</string>
-
-    //**Expenses Page**//
     <string name="recent_transactions">Transaksi Terkini</string>
     <string name="see_all">Lihat Semua</string>
     <string name="total_expenses">Total Pengeluaran Hari Ini</string>
     <string name="currency">Rp</string>
     <string name="total_currency">- Rp</string>
     <string name="number_format">#,###.##</string>
-    <string name="empty_expenses">
-        Riwayat transaksi belum tersedia, silahkan tambahkan
-        terlebih dahulu dengan mengeklik tombol +.
-    </string>
-
-    //**Add Expenses Page**//
+    <string name="empty_expenses">Riwayat transaksi belum tersedia, silahkan tambahkan terlebih dahulu dengan mengeklik tombol +.</string>
     <string name="add_expense_title">Tambah Pengeluaran</string>
     <string name="save_button">Simpan</string>
     <string name="amount_label">Jumlah</string>
@@ -57,19 +32,6 @@
     <string name="discard_button">Buang</string>
     <string name="discard_cancel_button">Batal</string>
     <string name="transaction_saved">Transaksi disimpan</string>
-
-    //**Reports Page//
-    <string name="empty_reports">
-        Riwayat transaksi belum tersedia, silahkan tambahkan
-        terlebih dahulu di halaman pengeluaran.
-    </string>
-
-    //**Analytics Page**//
-    <string name="empty_analytics">
-        Riwayat transaksi pada rentang waktu ini tidak tersedia.
-    </string>
-
-    //**Categories**//
     <string name="bills">Tagihan</string>
     <string name="debt">Hutang</string>
     <string name="education">Pendidikan</string>
@@ -83,58 +45,34 @@
     <string name="top_up">Isi Ulang</string>
     <string name="transportation">Transportasi</string>
     <string name="others">Lainnya</string>
-
-    //**Settings**//
+    <string name="empty_reports">Riwayat transaksi belum tersedia, silahkan tambahkan terlebih dahulu di halaman pengeluaran.</string>
+    <string name="empty_analytics">Riwayat transaksi pada rentang waktu ini tidak tersedia.</string>
     <string name="del_button">Hapus</string>
     <string name="del_desc">Hapus Semua Transaksi</string>
     <string name="lang_button">Bahasa</string>
     <string name="lang_desc">Ubah Bahasa</string>
     <string name="about_button">Tentang</string>
-    <string name="warning">
-        Peringatan: Saat ini anda sedang menggunakan versi pengembangan.
-        Versi ini AKAN mengandung bug, fitur yang rusak,
-        dan kerusakan yang tidak terduga. Gunakan dengan risiko anda sendiri!
-    </string>
+    <string name="warning">Peringatan: Saat ini anda sedang menggunakan versi pengembangan. Versi ini AKAN mengandung bug, fitur yang rusak, dan kerusakan yang tidak terduga. Gunakan dengan risiko anda sendiri!</string>
     <string name="delete_transactions">Hapus transaksi?</string>
-    <string name="delete_desc">
-        Seluruh riwayat transaksi yang telah Anda buat akan dihapus
-        dan tidak bisa dibatalkan.
-    </string>
+    <string name="delete_desc">Seluruh riwayat transaksi yang telah Anda buat akan dihapus dan tidak bisa dibatalkan.</string>
     <string name="delete_cancel">Batal</string>
     <string name="delete_confirmation">Hapus</string>
-    <string name="transaction_deleted">
-        Seluruh riwayat transaksi berhasil dihapus
-    </string>
-
-    //**Change Language**//
+    <string name="transaction_deleted">Seluruh riwayat transaksi berhasil dihapus</string>
     <string name="caution">Perhatian!</string>
-    <string name="caution_desc">
-        Untuk mengubah bahasa aplikasi, seluruh riwayat transaksi yang ada
-        akan dihapus terlebih dahulu, apakah anda ingin melanjutkannya?
-    </string>
+    <string name="caution_desc">Untuk mengubah bahasa aplikasi, seluruh riwayat transaksi yang ada akan dihapus terlebih dahulu, apakah anda ingin melanjutkannya?</string>
     <string name="caution_confirmation">Ya, lanjutkan</string>
-
-    //**About Page**//
     <string name="contrib_label">Kontributor</string>
-
-    //**Contributors**//
     <string name="contrib_name">Dimas Rian Hastedi</string>
     <string name="dev_role">Pengembangan</string>
     <string name="uiux_role">Desain UI/UX</string>
     <string name="support_role">Dukungan</string>
     <string name="translation_role">Terjemahan</string>
-
-    //**Date Utils**//
     <string name="today">Hari Ini</string>
     <string name="yesterday">Kemarin</string>
     <string name="time_format">HH:mm</string>
-
-    //**Recurrence**//
     <string name="recurrence_weekly">Mingguan</string>
     <string name="recurrence_monthly">Bulanan</string>
     <string name="recurrence_yearly">Tahunan</string>
-
-    /**Chart Label**//
     <string name="Monday">Sen</string>
     <string name="Tuesday">Sel</string>
     <string name="Wednesday">Rab</string>
@@ -142,7 +80,6 @@
     <string name="Friday">Jum</string>
     <string name="Saturday">Sab</string>
     <string name="Sunday">Min</string>
-
     <string name="January">Jan</string>
     <string name="February">Feb</string>
     <string name="March">Mar</string>
