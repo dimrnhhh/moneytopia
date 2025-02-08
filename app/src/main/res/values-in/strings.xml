@@ -10,16 +10,9 @@
         akan ditampilkan di sini. Anda juga dapat menghapus transaksi
         tersebut dengan cara mengeklik-nya.
     </string>
-    <string name="reports_desc">        Seluruh riwayat transaksi yang pernah Anda lakukan akan sepenuhnya
-        ditampilkan di sini.
-    </string>
-    <string name="analytics_desc">        Seluruh riwayat transaksi Anda pada halaman ini akan ditampilkan
-        dalam diagram garis. Anda juga dapat menggeser layar untuk melihat
-        riwayat transaksi berdasarkan rentang waktu tertentu.
-    </string>
-    <string name="settings_desc">        Pada halaman ini Anda dapat menghapus seluruh riwayat transaksi,
-        mengubah bahasa aplikasi, dan melihat informasi tentang aplikasi.
-    </string>
+    <string name="reports_desc">Seluruh riwayat transaksi yang pernah Anda lakukan akan sepenuhnya ditampilkan di sini.</string>
+    <string name="analytics_desc">Seluruh riwayat transaksi Anda pada halaman ini akan ditampilkan dalam diagram garis. Anda juga dapat menggeser layar untuk melihat riwayat transaksi berdasarkan rentang waktu tertentu.</string>
+    <string name="settings_desc">Pada halaman ini Anda dapat menghapus seluruh riwayat transaksi, mengubah bahasa aplikasi, dan melihat informasi tentang aplikasi.</string>
     <string name="alert_button">Oke</string>
     <string name="recent_transactions">Transaksi Terkini</string>
     <string name="see_all">Lihat Semua</string>
@@ -27,9 +20,7 @@
     <string name="currency">Rp</string>
     <string name="total_currency">- Rp</string>
     <string name="number_format">#,###.##</string>
-    <string name="empty_expenses">        Riwayat transaksi belum tersedia, silahkan tambahkan
-        terlebih dahulu dengan mengeklik tombol +.
-    </string>
+    <string name="empty_expenses">Riwayat transaksi belum tersedia, silahkan tambahkan terlebih dahulu dengan mengeklik tombol +.</string>
     <string name="add_expense_title">Tambah Pengeluaran</string>
     <string name="save_button">Simpan</string>
     <string name="amount_label">Jumlah</string>
@@ -54,32 +45,21 @@
     <string name="top_up">Isi Ulang</string>
     <string name="transportation">Transportasi</string>
     <string name="others">Lainnya</string>
-    <string name="empty_reports">        Riwayat transaksi belum tersedia, silahkan tambahkan
-        terlebih dahulu di halaman pengeluaran.
-    </string>
-    <string name="empty_analytics">        Riwayat transaksi pada rentang waktu ini tidak tersedia.
-    </string>
+    <string name="empty_reports">Riwayat transaksi belum tersedia, silahkan tambahkan terlebih dahulu di halaman pengeluaran.</string>
+    <string name="empty_analytics">Riwayat transaksi pada rentang waktu ini tidak tersedia.</string>
     <string name="del_button">Hapus</string>
     <string name="del_desc">Hapus Semua Transaksi</string>
     <string name="lang_button">Bahasa</string>
     <string name="lang_desc">Ubah Bahasa</string>
     <string name="about_button">Tentang</string>
-    <string name="warning">        Peringatan: Saat ini anda sedang menggunakan versi pengembangan.
-        Versi ini AKAN mengandung bug, fitur yang rusak,
-        dan kerusakan yang tidak terduga. Gunakan dengan risiko anda sendiri!
-    </string>
+    <string name="warning">Peringatan: Saat ini anda sedang menggunakan versi pengembangan. Versi ini AKAN mengandung bug, fitur yang rusak, dan kerusakan yang tidak terduga. Gunakan dengan risiko anda sendiri!</string>
     <string name="delete_transactions">Hapus transaksi?</string>
-    <string name="delete_desc">        Seluruh riwayat transaksi yang telah Anda buat akan dihapus
-        dan tidak bisa dibatalkan.
-    </string>
+    <string name="delete_desc">Seluruh riwayat transaksi yang telah Anda buat akan dihapus dan tidak bisa dibatalkan.</string>
     <string name="delete_cancel">Batal</string>
     <string name="delete_confirmation">Hapus</string>
-    <string name="transaction_deleted">        Seluruh riwayat transaksi berhasil dihapus
-    </string>
+    <string name="transaction_deleted">Seluruh riwayat transaksi berhasil dihapus</string>
     <string name="caution">Perhatian!</string>
-    <string name="caution_desc">        Untuk mengubah bahasa aplikasi, seluruh riwayat transaksi yang ada
-        akan dihapus terlebih dahulu, apakah anda ingin melanjutkannya?
-    </string>
+    <string name="caution_desc">Untuk mengubah bahasa aplikasi, seluruh riwayat transaksi yang ada akan dihapus terlebih dahulu, apakah anda ingin melanjutkannya?</string>
     <string name="caution_confirmation">Ya, lanjutkan</string>
     <string name="contrib_label">Kontributor</string>
     <string name="contrib_name">Dimas Rian Hastedi</string>
