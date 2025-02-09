@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">Moneytopia</string>
+
+    //**Main**//
+    //**Title**//
+    <string name="expenses_title">Ausgaben</string>
+    <string name="reports_title">Berichte</string>
+    <string name="analytics_title">Analysen</string>
+    <string name="settings_title">Einstellugen</string>
+    <string name="delete_transaction">Transaktion löschen</string>
+
+    //**Page Header**//
+    <string name="expenses_desc">
+        Hier wird Ihr gesamter Ausgabenverlauf mit der Gesamtsumme der
+        letzten 24 Stunden angezeigt. Sie können auch jede einzelne
+        Ausgabe löschen, indem Sie auf sie tippen.
+    </string>
+    <string name="reports_desc">
+        Hier wird Ihre gesamte Ausgabenhistorie und die Gesamtsumme nach Zeit
+        angezeigt.
+    </string>
+    <string name="analytics_desc">
+        Ihr gesamter Transaktionsverlauf wird auf dieser Seite
+        in einem Liniendiagramm angezeigt. Sie können den Verlauf auch
+        für einen bestimmten Zeitraumanzeigen
+        , indem Sie auf die Schaltfläche drücken
+        oder den Bildschirm nach rechts oder links streichen.
+    </string>
+    <string name="settings_desc">
+        Auf dieser Seite können Sie Ihren gesamten
+        Transaktionsverlauflöschen
+        , Ihre Sprache ändern
+         und Informationen über diese App anzeigen.
+    </string>
+
+    //**Alert Dialog**//
+    <string name="alert_button">OK</string>
+
+    //**Expenses Page**//
+    <string name="recent_transactions">Neueste Transaktionen</string>
+    <string name="see_all">Alle anzeigen</string>
+    <string name="total_expenses">heutige Gesamtausgaben</string>
+    <string name="currency">€</string>
+    <string name="total_currency">- €</string>
+    <string name="number_format">#.###,##</string>
+    <string name="empty_expenses">
+        Transaktionsdatensätze sind noch nicht verfügbar, bitte
+        fügen Sie sie zuerst hinzu, indem Sie auf die Schaltfläche + klicken.
+    </string>
+
+    //**Add Expenses Page**//
+    <string name="add_expense_title">Ausgaben hinzufügen</string>
+    <string name="save_button">Speichern</string>
+    <string name="amount_label">Betrag</string>
+    <string name="category_label">Kategorie</string>
+    <string name="date_label">Datum</string>
+    <string name="note_label">Notiz</string>
+    <string name="date_title">Datum auswählen</string>
+    <string name="discard_transaction">Transaktion verwerfen?</string>
+    <string name="discard_button">Verwerfen</string>
+    <string name="discard_cancel_button">Abbrechen</string>
+    <string name="transaction_saved">Transaktion gespeichert</string>
+
+    //**Categories**//
+    <string name="bills">Rechnung</string>
+    <string name="debt">Schulden</string>
+    <string name="education">Bildung</string>
+    <string name="entertainment">Unterhaltung</string>
+    <string name="family">Familie</string>
+    <string name="foods_and_drinks">Essen &amp; Trinken</string>
+    <string name="healthcare">Gesundheitspflege</string>
+    <string name="savings">Ersparnisse</string>
+    <string name="shopping">Shopping</string>
+    <string name="social_events">Gesellschaftliche Veranstaltungen</string>
+    <string name="top_up">Nachfüllen</string>
+    <string name="transportation">Transport</string>
+    <string name="others">Andere</string>
+
+    //**Reports Page**//
+    <string name="empty_reports">
+        <string name="empty_reports">
+            Der Transaktionsdatensatz ist noch nicht verfügbar, bitte
+            fügen Sie ihn zuerst auf der Ausgabenseite hinzu.
+    </string>
+    </string>
+
+    //**Analytics Page**//
+    <string name="empty_analytics">
+        Transaktionsaufzeichnungen für diesen Zeitraum sind nicht
+        verfügbar.
+    </string>
+
+    //**Settings Page**//
+    <string name="del_button">Löschen</string>
+    <string name="del_desc">Alle Transaktionen löschen</string>
+    <string name="lang_button">Sprache</string>
+    <string name="lang_desc">Sprache ändern</string>
+    <string name="about_button">Über</string>
+    <string name="warning">
+        Warnung: Sie verwenden derzeit ein Entwicklungs-Build.
+        Diese Builds enthalten Bugs, fehlerhafte Funktionen
+        und unerwartete Abstürze. Verwendung auf eigene Gefahr!
+    </string>
+    <string name="delete_transactions">Transaktionen löschen?</string>
+    <string name="delete_desc">
+        Alle Transaktionen, die Sie haben, werden gelöscht und
+        können nicht mehr wiederherrgestellt werden.
+    </string>
+    <string name="delete_cancel">Abbrechen</string>
+    <string name="delete_confirmation">Löschen</string>
+    <string name="transaction_deleted">Transaktion gelöscht</string>
+
+    //**Change Language**//
+    <string name="caution">Caution!</string>
+    <string name="caution_desc">
+        Um die Sprache der Anwendung zu ändern,
+        werden zunächstalle vorhandenen
+         Transaktionsdatensätze gelöscht.
+        Möchten Sie fortfahren?
+    </string>
+    <string name="caution_confirmation">Ja, weitermachen</string>
+
+    //**About Page**//
+    <string name="contrib_label">Mitarbeitende</string>
+
+    //**Contributors**//
+    <string name="contrib_name">Dimas Rian Hastedi</string>
+    <string name="dev_role">Entwicklung</string>
+    <string name="uiux_role">UI/UX Gestaltung</string>
+    <string name="support_role">Unterstützung</string>
+    <string name="translation_role">Übersetzung</string>
+
+    //**Date Utils**//
+    <string name="today">Heute</string>
+    <string name="yesterday">Gestern</string>
+    <string name="time_format">h:mm a</string>
+
+    //**Recurrence**//
+    <string name="recurrence_weekly">Wöchentlich</string>
+    <string name="recurrence_monthly">Monatlich</string>
+    <string name="recurrence_yearly">Jährlich</string>
+
+    /**Chart Label**//
+    <string name="Monday">Mon</string>
+    <string name="Tuesday">Die</string>
+    <string name="Wednesday">Mit</string>
+    <string name="Thursday">Don</string>
+    <string name="Friday">Fre</string>
+    <string name="Saturday">Sam</string>
+    <string name="Sunday">Son</string>
+
+    <string name="January">Jan</string>
+    <string name="February">Feb</string>
+    <string name="March">Mär</string>
+    <string name="April">Apr</string>
+    <string name="May">Mai</string>
+    <string name="June">Jun</string>
+    <string name="July">Jul</string>
+    <string name="August">Aug</string>
+    <string name="September">Sep</string>
+    <string name="November">Nov</string>
+    <string name="October">Oct</string>
+    <string name="December">Dez</string>
+</resources>
