@@ -6,6 +6,7 @@ coreKtx = "1.15.0"
 espressoCore = "3.6.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
+#noinspection GradleDependency
 kotlin = "2.0.21"
 lifecycleRuntimeKtx = "2.8.7"
 uiTestManifest = "1.7.8"
