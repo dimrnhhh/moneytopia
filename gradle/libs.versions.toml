@@ -9,7 +9,7 @@ junitVersion = "1.2.1"
 #noinspection GradleDependency
 kotlin = "2.0.21"
 lifecycleRuntimeKtx = "2.9.0"
-uiTestManifest = "1.8.0"
+uiTestManifest = "1.8.2"
 realmKotlin = "3.0.0"
 coreSplashscreen = "1.1.0-rc01"
 coroutinesCore = "1.10.2"
