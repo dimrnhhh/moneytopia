@@ -51,3 +51,12 @@ A fully functional app for tracking personal expenses built using Jetpack Compos
 - [AppCompat](https://mvnrepository.com/artifact/androidx.appcompat/appcompat)
 - [Compose Material Icons Extended](https://mvnrepository.com/artifact/androidx.compose.material/material-icons-extended)
 - [Vico Compose Chart](https://github.com/patrykandpatrick/vico/tree/v1.16.1)
+
+## Contributing
+As an open-source project, contributions are welcome! Developers can:
+- Submit bug reports or feature requests via GitHub issues.
+- Contribute code improvements or new features via pull requests.
+- Enhance documentation or provide translations for broader accessibility using [Crowdin](https://crowdin.com/project/moneytopia).
+
+## License
+Moneytopia is released under the GNU General Public License (GPL) 3.0. This license ensures that the app remains free software, allowing users to use, modify, and distribute the code, provided that any derivative works are also licensed under GPL 3.0.
