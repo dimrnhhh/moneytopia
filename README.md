@@ -1,7 +1,7 @@
 <img src="art/banner.webp" alt="GitHub Preview Card">
 
 # Moneytopia
-A fully functional app for tracking personal expenses built using Jetpack Compose with a simple UI for easy understanding and ease of use.
+A fully functional personal expense tracker built with Jetpack Compose and Material 3. With its clean and intuitive design, it makes managing your finances simple and stress-free, helping you stay in control of your spending with ease.
 \
 \
 [<img src="art/get-it-on-github.png" alt="Get it on GitHub" height="80">](https://github.com/dimrnhhh/moneytopia/releases/latest)
