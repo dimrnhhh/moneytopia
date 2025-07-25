@@ -15,7 +15,7 @@
     <string name="see_all">查看全部</string>
     <string name="total_expenses">今日总支出</string>
     <string name="currency">$</string>
-    <string name="total_currency">- $</string>
+    <string name="total_currency">- ¥</string>
     <string name="number_format">#,###.##</string>
     <string name="empty_expenses">交易记录不存在，请点击 + 按钮添加。</string>
     <string name="add_expense_title">添加支出</string>
