@@ -16,7 +16,7 @@ coroutinesCore = "1.10.2"
 materialIconsExtended = "1.7.8"
 navigationCompose = "2.9.3"
 composeMaterial3DatetimePickers = "0.7.2"
-lifecycleViewmodelCompose = "2.9.2"
+lifecycleViewmodelCompose = "2.9.4"
 appcompat = "1.7.1"
 vicoCompose = "1.16.1"
 
