@@ -9,12 +9,12 @@ plugins {
 
 android {
     namespace = "com.dimrnhhh.moneytopia"
-    compileSdk = 35
+    compileSdk = 36
     defaultConfig {
         applicationId = "com.dimrnhhh.moneytopia"
         minSdk = 28
         targetSdk = 35
-        versionCode = 6
+        versionCode = 7
         versionName = "1.0.2"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
