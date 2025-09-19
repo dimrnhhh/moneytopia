@@ -7,7 +7,7 @@ espressoCore = "3.7.0"
 junit = "4.13.2"
 junitVersion = "1.3.0"
 #noinspection GradleDependency
-kotlin = "2.2.0"
+kotlin = "2.0.21"
 lifecycleRuntimeKtx = "2.9.2"
 uiTestManifest = "1.8.3"
 realmKotlin = "3.0.0"
