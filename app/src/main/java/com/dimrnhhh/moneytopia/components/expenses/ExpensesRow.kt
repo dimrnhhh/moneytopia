@@ -19,6 +19,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.material3.surfaceColorAtElevation
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
@@ -32,10 +33,9 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import com.dimrnhhh.moneytopia.R
-import com.dimrnhhh.moneytopia.models.Category
+import com.dimrnhhh.moneytopia.components.categories.getIconVector
 import com.dimrnhhh.moneytopia.models.Expense
-import com.dimrnhhh.moneytopia.models.getIcon
-import com.dimrnhhh.moneytopia.models.getName
+import com.dimrnhhh.moneytopia.viewmodels.CategoryViewModel
 import com.dimrnhhh.moneytopia.viewmodels.ExpensesViewModel
 import java.text.DecimalFormat
 import java.time.format.DateTimeFormatter
@@ -45,26 +45,17 @@ import java.time.format.DateTimeFormatter
 fun ExpensesRow(
     navController: NavController,
     expense: Expense,
-    viewModel: ExpensesViewModel = viewModel()
+    viewModel: ExpensesViewModel = viewModel(),
+    categoryViewModel: CategoryViewModel = viewModel()
 ) {
     val sheetState = rememberModalBottomSheetState()
     val showBottomSheet = rememberSaveable { mutableStateOf(false) }
     val backStackEntry by navController.currentBackStackEntryAsState()
+    val categoryState by categoryViewModel.uiState.collectAsState()
 
-    val categoryIcon = when (expense.category) {
-        Category.Bills.getName() -> Category.Bills.getIcon()
-        Category.Debt.getName() -> Category.Debt.getIcon()
-        Category.Education.getName() -> Category.Education.getIcon()
-        Category.Family.getName() -> Category.Family.getIcon()
-        Category.FoodsAndDrinks.getName() -> Category.FoodsAndDrinks.getIcon()
-        Category.Healthcare.getName() -> Category.Healthcare.getIcon()
-        Category.Savings.getName() -> Category.Savings.getIcon()
-        Category.Shopping.getName() -> Category.Shopping.getIcon()
-        Category.SocialEvents.getName() -> Category.SocialEvents.getIcon()
-        Category.TopUp.getName() -> Category.TopUp.getIcon()
-        Category.Transportation.getName() -> Category.Transportation.getIcon()
-        else -> { Category.Others.getIcon() }
-    }
+    val category = categoryState.categories.find { it.name == expense.category }
+    val icon = getIconVector(category?.icon ?: "Category")
+
     ListItem(
         modifier = Modifier
             .fillMaxWidth()
@@ -93,7 +84,7 @@ fun ExpensesRow(
                 Icon(
                     modifier = Modifier
                         .padding(10.dp),
-                    imageVector = categoryIcon,
+                    imageVector = icon,
                     tint = MaterialTheme.colorScheme.primary,
                     contentDescription = null
                 )

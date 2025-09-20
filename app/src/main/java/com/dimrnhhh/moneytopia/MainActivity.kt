@@ -31,10 +31,8 @@ import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.getValue
-import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
-import androidx.compose.runtime.setValue
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
@@ -44,9 +42,11 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.dimrnhhh.moneytopia.components.navigation.BottomNavItem
+import com.dimrnhhh.moneytopia.database.initializeCategories
 import com.dimrnhhh.moneytopia.pages.AboutPage
 import com.dimrnhhh.moneytopia.pages.AddExpensePage
 import com.dimrnhhh.moneytopia.pages.AnalyticsPage
+import com.dimrnhhh.moneytopia.pages.CategoryPage
 import com.dimrnhhh.moneytopia.pages.ExpensesPage
 import com.dimrnhhh.moneytopia.pages.LanguagesPage
 import com.dimrnhhh.moneytopia.pages.ReportsPage
@@ -66,11 +66,9 @@ class MainActivity : ComponentActivity() {
         }
         enableEdgeToEdge()
         super.onCreate(savedInstanceState)
+        initializeCategories()
         setContent {
             MoneytopiaTheme {
-                var selectedItemIndex by rememberSaveable {
-                    mutableIntStateOf(0)
-                }
                 val itemsBottomBar = listOf(
                     BottomNavItem(
                         title = stringResource(R.string.expenses_title),
@@ -130,6 +128,10 @@ class MainActivity : ComponentActivity() {
                         bottomBarState.value = false
                         fabState.value = false
                     }
+                    "settings/categories" -> {
+                        bottomBarState.value = false
+                        fabState.value = false
+                    }
                 }
                 Scaffold(
                     floatingActionButton = {
@@ -159,7 +161,6 @@ class MainActivity : ComponentActivity() {
                                     NavigationBarItem(
                                         selected = backStackEntry?.destination?.route == it.route,
                                         onClick = {
-                                            selectedItemIndex = index
                                             navController.navigate(it.route) {
                                                 popUpTo(navController.graph.findStartDestination().id) {
                                                     saveState = false
@@ -229,6 +230,9 @@ class MainActivity : ComponentActivity() {
                         }
                         composable("settings/about") {
                             AboutPage(navController)
+                        }
+                        composable("settings/categories") {
+                            CategoryPage(navController)
                         }
                     }
                 }

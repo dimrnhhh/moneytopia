@@ -52,9 +52,8 @@ import androidx.compose.ui.unit.sp
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.dimrnhhh.moneytopia.R
-import com.dimrnhhh.moneytopia.models.Category
-import com.dimrnhhh.moneytopia.models.getName
 import com.dimrnhhh.moneytopia.viewmodels.AddExpenseViewModel
+import com.dimrnhhh.moneytopia.viewmodels.CategoryViewModel
 import com.marosseleng.compose.material3.datetimepickers.date.ui.dialog.DatePickerDialog
 import kotlinx.coroutines.launch
 
@@ -63,27 +62,16 @@ import kotlinx.coroutines.launch
 fun AddExpensePage(
     navController: NavController,
     viewModel: AddExpenseViewModel = viewModel(),
+    categoryViewModel: CategoryViewModel = viewModel()
 ) {
     val state by viewModel.uiState.collectAsState()
-    val categories = listOf(
-        Category.Bills.getName(),
-        Category.Debt.getName(),
-        Category.Education.getName(),
-        Category.Family.getName(),
-        Category.FoodsAndDrinks.getName(),
-        Category.Healthcare.getName(),
-        Category.Savings.getName(),
-        Category.Shopping.getName(),
-        Category.SocialEvents.getName(),
-        Category.TopUp.getName(),
-        Category.Transportation.getName(),
-        Category.Others.getName(),
-    )
+    val categoryState by categoryViewModel.uiState.collectAsState()
+    
     var expanded by remember {
         mutableStateOf(false)
     }
     var selectedCategory by remember {
-        mutableStateOf(categories[0])
+        mutableStateOf("")
     }
     val categoryIcon = if (expanded) {
         Icons.Outlined.ArrowDropUp
@@ -265,11 +253,11 @@ fun AddExpensePage(
                     expanded = expanded,
                     onDismissRequest = { expanded = false }
                 ) {
-                    categories.forEach {
+                    categoryState.categories.forEach {
                         DropdownMenuItem(
-                            text = { Text(text = it) },
+                            text = { Text(text = it.name) },
                             onClick = {
-                                selectedCategory = it
+                                selectedCategory = it.name
                                 viewModel.setCategory(selectedCategory)
                                 expanded = false
                             }
