@@ -17,6 +17,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.safeDrawingPadding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Settings
+import androidx.compose.material.icons.outlined.Category
 import androidx.compose.material.icons.outlined.Delete
 import androidx.compose.material.icons.outlined.Error
 import androidx.compose.material.icons.outlined.Info
@@ -125,6 +126,12 @@ fun SettingsPage(
                 leadingContent = Icons.Outlined.Info,
                 supportingContent = stringResource(R.string.app_name),
                 onClick = { navController.navigate("settings/about") }
+            ),
+            MenuSettingItem(
+                headlineContent = stringResource(R.string.category_label),
+                leadingContent = Icons.Outlined.Category,
+                supportingContent = stringResource(R.string.category_desc),
+                onClick = { navController.navigate("settings/categories") }
             )
         )
 
