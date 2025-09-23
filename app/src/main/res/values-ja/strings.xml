@@ -29,6 +29,7 @@
     <string name="discard_button">Discard</string>
     <string name="discard_cancel_button">Cancel</string>
     <string name="transaction_saved">Transaction saved</string>
+    <string name="category_desc">Manage your expense categories</string>
     <string name="bills">Bill</string>
     <string name="debt">Debt</string>
     <string name="education">Education</string>
