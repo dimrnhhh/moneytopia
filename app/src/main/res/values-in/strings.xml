@@ -29,6 +29,7 @@
     <string name="discard_button">Buang</string>
     <string name="discard_cancel_button">Batal</string>
     <string name="transaction_saved">Transaksi disimpan</string>
+    <string name="category_desc">Manage your expense categories</string>
     <string name="bills">Tagihan</string>
     <string name="debt">Hutang</string>
     <string name="education">Pendidikan</string>
