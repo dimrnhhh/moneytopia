@@ -39,13 +39,12 @@ class ExpensesViewModel(application: Application) : AndroidViewModel(application
             realm.query<Expense>().asFlow().collect {
                 _uiState.update { state ->
                     state.copy(
-                        expenses = it.list,
-                        sumTotal = it.list.sumOf { it.amount }
+                        expenses = it.list
                     )
                 }
-                setRecurrence(Recurrence.Daily)
             }
         }
+        setRecurrence(Recurrence.Daily)
     }
 
     private fun loadCurrencySymbol() {
