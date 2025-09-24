@@ -91,20 +91,23 @@ fun ExpensesRow(
             }
         },
         headlineContent = {
-            Text(
-                modifier = Modifier
-                    .padding(bottom = 3.dp),
-                text = expense.category,
-                style = MaterialTheme.typography.titleSmall,
-                fontWeight = FontWeight.SemiBold
-            )
+            Column {
+                Text(
+                    modifier = Modifier
+                        .padding(bottom = 3.dp),
+                    text = expense.category,
+                    style = MaterialTheme.typography.titleSmall,
+                    fontWeight = FontWeight.SemiBold
+                )
+                if (expense.note.isNotEmpty()) {
+                    Text(
+                        text = expense.note,
+                        style = MaterialTheme.typography.titleSmall
+                    )
+                }
+            }
         },
-        supportingContent = {
-            Text(
-                text = expense.note,
-                style = MaterialTheme.typography.titleSmall
-            )
-        },
+        supportingContent = { },
         trailingContent = {
             Column(
                 horizontalAlignment = Alignment.End,

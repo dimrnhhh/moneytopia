@@ -184,7 +184,7 @@ fun AddExpensePage(
                             }
                             controller?.hide()
                         },
-                        enabled = state.amount != "" && state.category != "" && state.note != ""
+                        enabled = state.amount != "" && state.category != ""
                     ) {
                         Text(text = stringResource(R.string.save_button))
                     }
