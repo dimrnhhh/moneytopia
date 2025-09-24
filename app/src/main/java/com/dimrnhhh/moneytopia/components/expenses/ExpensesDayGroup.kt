@@ -24,12 +24,19 @@ import com.dimrnhhh.moneytopia.models.DayExpenses
 import java.text.DecimalFormat
 import java.time.LocalDate
 
+import com.dimrnhhh.moneytopia.viewmodels.ExpensesViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.compose.runtime.collectAsState
+import androidx.compose.runtime.getValue
+
 @Composable
 fun ExpensesDayGroup(
     navController: NavController,
     date: LocalDate,
-    dayExpenses: DayExpenses
+    dayExpenses: DayExpenses,
+    viewModel: ExpensesViewModel = viewModel()
 ) {
+    val state by viewModel.uiState.collectAsState()
     Column(
         modifier = Modifier
             .fillMaxWidth(),
@@ -69,7 +76,7 @@ fun ExpensesDayGroup(
                 },
                 trailingContent = {
                     Text(
-                        text = stringResource(R.string.total_currency) + DecimalFormat(stringResource(R.string.number_format)).format(dayExpenses.total),
+                        text = "- " + state.currencySymbol + DecimalFormat(stringResource(R.string.number_format)).format(dayExpenses.total),
                         style = MaterialTheme.typography.titleLarge,
                         fontWeight = FontWeight.SemiBold,
                         color = MaterialTheme.colorScheme.onPrimaryContainer

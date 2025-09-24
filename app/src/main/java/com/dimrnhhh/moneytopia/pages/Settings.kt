@@ -55,16 +55,27 @@ import com.dimrnhhh.moneytopia.models.Expense
 import io.realm.kotlin.ext.query
 import kotlinx.coroutines.launch
 
+import com.dimrnhhh.moneytopia.components.settings.AlertDialogCurrency
+import com.dimrnhhh.moneytopia.viewmodels.SettingsViewModel
+import androidx.compose.material.icons.outlined.AttachMoney
+import androidx.lifecycle.viewmodel.compose.viewModel
+import androidx.compose.runtime.collectAsState
+
 @RequiresApi(Build.VERSION_CODES.TIRAMISU)
 @Composable
 fun SettingsPage(
     navController: NavController,
+    settingsViewModel: SettingsViewModel = viewModel()
 ) {
+    val settingsState by settingsViewModel.uiState.collectAsState()
     val coroutineScope = rememberCoroutineScope()
     var deleteAlertDialog by remember {
         mutableStateOf(false)
     }
     var languageAlertDialog by remember {
+        mutableStateOf(false)
+    }
+    var currencyAlertDialog by remember {
         mutableStateOf(false)
     }
     val eraseAllData: () -> Unit = {
@@ -132,6 +143,12 @@ fun SettingsPage(
                 leadingContent = Icons.Outlined.Category,
                 supportingContent = stringResource(R.string.category_desc),
                 onClick = { navController.navigate("settings/categories") }
+            ),
+            MenuSettingItem(
+                headlineContent = stringResource(R.string.currency_headline),
+                leadingContent = Icons.Outlined.AttachMoney,
+                supportingContent = stringResource(R.string.currency_supporting_text),
+                onClick = { currencyAlertDialog = true }
             )
         )
 
@@ -169,6 +186,16 @@ fun SettingsPage(
                 dialogTitle = stringResource(R.string.caution),
                 dialogText = stringResource(R.string.caution_desc),
                 buttonText = stringResource(R.string.caution_confirmation)
+            )
+        }
+
+        if (currencyAlertDialog) {
+            AlertDialogCurrency(
+                onDismissRequest = { currencyAlertDialog = false },
+                onConfirmation = { newSymbol ->
+                    settingsViewModel.saveCurrencySymbol(newSymbol)
+                },
+                currentSymbol = settingsState.currencySymbol
             )
         }
 

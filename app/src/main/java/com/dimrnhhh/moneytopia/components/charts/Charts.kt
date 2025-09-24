@@ -1,5 +1,6 @@
 package com.dimrnhhh.moneytopia.components.charts
 
+import android.app.Application
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
@@ -12,20 +13,21 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
-import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavController
 import com.dimrnhhh.moneytopia.R
-import com.dimrnhhh.moneytopia.viewmodels.viewModelFactory
 import com.dimrnhhh.moneytopia.components.expenses.ExpensesByPeriod
 import com.dimrnhhh.moneytopia.models.Recurrence
 import com.dimrnhhh.moneytopia.utils.formatDayForRange
 import com.dimrnhhh.moneytopia.viewmodels.ChartsViewModel
+import com.dimrnhhh.moneytopia.viewmodels.ChartsViewModelFactory
 import java.text.DecimalFormat
 import java.time.LocalDate
 
@@ -33,15 +35,15 @@ import java.time.LocalDate
 fun Charts(
     navController: NavController,
     page: Int,
-    recurrence: Recurrence,
-    viewModel: ChartsViewModel = viewModel(
-        key = "$page-${recurrence.name}",
-        factory = viewModelFactory {
-            ChartsViewModel(page, recurrence)
-        }
-    )
+    recurrence: Recurrence
 ) {
+    val context = LocalContext.current
+    val viewModel: ChartsViewModel = viewModel(
+        key = "$page-${recurrence.name}",
+        factory = ChartsViewModelFactory(context.applicationContext as Application, page, recurrence)
+    )
     val uiState = viewModel.uiState.collectAsState().value
+
     Column(
         modifier = Modifier
             .fillMaxSize()
@@ -59,7 +61,7 @@ fun Charts(
                 style = MaterialTheme.typography.titleMedium,
             )
             Text(
-                text = stringResource(R.string.currency) + DecimalFormat(stringResource(R.string.number_format)).format(uiState.totalInRange),
+                text = uiState.currencySymbol + DecimalFormat(stringResource(R.string.number_format)).format(uiState.totalInRange),
                 style = MaterialTheme.typography.titleMedium,
                 fontSize = 24.sp,
                 fontWeight = FontWeight.SemiBold
