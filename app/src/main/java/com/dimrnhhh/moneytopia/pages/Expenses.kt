@@ -92,7 +92,7 @@ fun ExpensesPage(
                     style = MaterialTheme.typography.titleMedium,
                 )
                 Text(
-                    text = stringResource(R.string.currency) + DecimalFormat(stringResource(R.string.number_format)).format(state.sumTotal),
+                    text = state.currencySymbol + DecimalFormat(stringResource(R.string.number_format)).format(state.sumTotal),
                     style = MaterialTheme.typography.titleMedium,
                     fontSize = 32.sp,
                     fontWeight = FontWeight.SemiBold
