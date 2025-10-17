@@ -90,4 +90,9 @@
     <string name="November">Nov</string>
     <string name="October">Oct</string>
     <string name="December">Dec</string>
+    <string name="currency_dialog_title">Change Currency</string>
+    <string name="currency_dialog_desc">Enter the new currency symbol you want to use.</string>
+    <string name="currency_symbol_label">Currency Symbol</string>
+    <string name="currency_headline">Currency</string>
+    <string name="currency_supporting_text">Change the currency symbol</string>
 </resources>
