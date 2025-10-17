@@ -37,31 +37,31 @@ fun ExpensesByDay(
                 .fillMaxHeight(),
             verticalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            groupedExpenses.keys.forEach {
-                Row(
-                    modifier = Modifier
-                        .fillMaxWidth(),
-                    horizontalArrangement = Arrangement.SpaceBetween,
-                    verticalAlignment = Alignment.CenterVertically
+            Row(
+                modifier = Modifier
+                    .fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text(
+                    text = stringResource(R.string.recent_transactions),
+                    style = MaterialTheme.typography.titleMedium,
+                    fontWeight = FontWeight.SemiBold
+                )
+                FilledTonalButton(
+                    onClick = {
+                        navController.navigate("reports")
+                    }
                 ) {
                     Text(
-                        text = stringResource(R.string.recent_transactions),
-                        style = MaterialTheme.typography.titleMedium,
-                        fontWeight = FontWeight.SemiBold
+                        text = stringResource(R.string.see_all),
+                        style = MaterialTheme.typography.titleSmall,
+                        fontWeight = FontWeight.SemiBold,
+                        color = MaterialTheme.colorScheme.primary
                     )
-                    FilledTonalButton(
-                        onClick = {
-                            navController.navigate("reports")
-                        }
-                    ) {
-                        Text(
-                            text = stringResource(R.string.see_all),
-                            style = MaterialTheme.typography.titleSmall,
-                            fontWeight = FontWeight.SemiBold,
-                            color = MaterialTheme.colorScheme.primary
-                        )
-                    }
                 }
+            }
+            groupedExpenses.keys.forEach {
                 ExpensesDayGroup(
                     navController = navController,
                     date = it,

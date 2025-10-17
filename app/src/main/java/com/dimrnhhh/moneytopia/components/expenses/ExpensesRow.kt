@@ -56,6 +56,8 @@ fun ExpensesRow(
     val category = categoryState.categories.find { it.name == expense.category }
     val icon = getIconVector(category?.icon ?: "Category")
 
+    val expensesState by viewModel.uiState.collectAsState()
+
     ListItem(
         modifier = Modifier
             .fillMaxWidth()
@@ -114,7 +116,7 @@ fun ExpensesRow(
                 verticalArrangement = Arrangement.spacedBy(3.dp)
             ) {
                 Text(
-                    text = stringResource(R.string.total_currency) + DecimalFormat(stringResource(R.string.number_format)).format(expense.amount),
+                    text = "- " + expensesState.currencySymbol + DecimalFormat(stringResource(R.string.number_format)).format(expense.amount),
                     style = MaterialTheme.typography.titleSmall,
                     color = MaterialTheme.colorScheme.error,
                     fontWeight = FontWeight.SemiBold,

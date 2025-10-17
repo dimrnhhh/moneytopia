@@ -38,12 +38,20 @@ import com.dimrnhhh.moneytopia.components.header.HeaderPage
 import com.dimrnhhh.moneytopia.viewmodels.ExpensesViewModel
 import java.text.DecimalFormat
 
+import androidx.compose.runtime.LaunchedEffect
+import com.dimrnhhh.moneytopia.models.Recurrence
+
 @Composable
 fun ExpensesPage(
     navController: NavHostController,
     viewModel: ExpensesViewModel = viewModel()
 ) {
     val state by viewModel.uiState.collectAsState()
+
+    LaunchedEffect(Unit) {
+        viewModel.setRecurrence(Recurrence.Daily)
+    }
+
     Scaffold(
         topBar = {
             val openAlertDialog = remember { mutableStateOf(false) }
@@ -92,7 +100,7 @@ fun ExpensesPage(
                     style = MaterialTheme.typography.titleMedium,
                 )
                 Text(
-                    text = stringResource(R.string.currency) + DecimalFormat(stringResource(R.string.number_format)).format(state.sumTotal),
+                    text = state.currencySymbol + DecimalFormat(stringResource(R.string.number_format)).format(state.sumTotal),
                     style = MaterialTheme.typography.titleMedium,
                     fontSize = 32.sp,
                     fontWeight = FontWeight.SemiBold
