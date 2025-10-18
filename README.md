@@ -4,8 +4,9 @@
 A fully functional personal expense tracker built with Jetpack Compose and Material 3. With its clean and intuitive design, it makes managing your finances simple and stress-free, helping you stay in control of your spending with ease.
 \
 \
-[<img src="art/get-it-on-github.png" alt="Get it on GitHub" height="80">](https://github.com/dimrnhhh/moneytopia/releases/latest)
-[<img src="art/get-it-on-izzyondroid.png" alt="Get it on IzzyOnDroid" height="80">](https://apt.izzysoft.de/fdroid/index/apk/com.dimrnhhh.moneytopia)
+[<img src="art/get-it-on-github.png" alt="Get it on GitHub" height="80">](https://github.com/dimrnhhh/moneytopia/releases/latest/)
+[<img src="art/get-it-on-izzyondroid.png" alt="Get it on IzzyOnDroid" height="80">](https://apt.izzysoft.de/fdroid/index/apk/com.dimrnhhh.moneytopia/)
+[<img src="art/get-it-on-openapk.png" alt="Get it on OpenAPK" height="80">](https://www.openapk.net/moneytopia/com.dimrnhhh.moneytopia/)
 
 ## Features
 - Material 3 (Material You) UI with Dynamic Color
