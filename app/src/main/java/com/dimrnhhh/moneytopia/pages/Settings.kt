@@ -133,12 +133,6 @@ fun SettingsPage(
                 onClick = { languageAlertDialog = true }
             ),
             MenuSettingItem(
-                headlineContent = stringResource(R.string.about_button),
-                leadingContent = Icons.Outlined.Info,
-                supportingContent = stringResource(R.string.app_name),
-                onClick = { navController.navigate("settings/about") }
-            ),
-            MenuSettingItem(
                 headlineContent = stringResource(R.string.category_label),
                 leadingContent = Icons.Outlined.Category,
                 supportingContent = stringResource(R.string.category_desc),
@@ -147,8 +141,14 @@ fun SettingsPage(
             MenuSettingItem(
                 headlineContent = stringResource(R.string.currency_headline),
                 leadingContent = Icons.Outlined.AttachMoney,
-                supportingContent = stringResource(R.string.currency_supporting_text),
+                supportingContent = stringResource(R.string.currency_dialog_title),
                 onClick = { currencyAlertDialog = true }
+            ),
+            MenuSettingItem(
+                headlineContent = stringResource(R.string.about_button),
+                leadingContent = Icons.Outlined.Info,
+                supportingContent = stringResource(R.string.app_name),
+                onClick = { navController.navigate("settings/about") }
             )
         )
 
