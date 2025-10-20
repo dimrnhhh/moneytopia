@@ -29,7 +29,7 @@
     <string name="discard_button">Supprimer</string>
     <string name="discard_cancel_button">Annuler</string>
     <string name="transaction_saved">Transaction sauvegardée</string>
-    <string name="category_desc">Gérez vos catégories de dépenses</string>
+    <string name="category_desc">Gérer les catégories</string>
     <string name="bills">Facture</string>
     <string name="debt">Dette</string>
     <string name="education">Éducation</string>
@@ -94,5 +94,4 @@
     <string name="currency_dialog_desc">Entrez le nouveau symbole monétaire que vous souhaitez utiliser.</string>
     <string name="currency_symbol_label">Symbole monétaire</string>
     <string name="currency_headline">Devise</string>
-    <string name="currency_supporting_text">Changer le symbole monétaire</string>
 </resources>
