@@ -26,14 +26,15 @@ import java.time.DayOfWeek
 import com.patrykandpatrick.vico.core.chart.line.LineChart.LineSpec
 import com.patrykandpatrick.vico.core.component.shape.shader.DynamicShaders
 import com.patrykandpatrick.vico.core.component.text.textComponent
-import com.patrykandpatrick.vico.core.entry.entryModelOf
+import com.patrykandpatrick.vico.core.entry.ChartEntryModelProducer
+import com.patrykandpatrick.vico.core.entry.entryOf
 
 @Composable
 fun WeeklyChart(
     expenses: List<Expense>,
 ) {
     val groupedExpenses = expenses.groupedByDayOfWeek()
-    val chartEntryModel = entryModelOf(
+    val chartEntryModel = listOf(
         groupedExpenses[DayOfWeek.MONDAY.name]?.total?.toFloat()?: 0f,
         groupedExpenses[DayOfWeek.TUESDAY.name]?.total?.toFloat()?: 0f,
         groupedExpenses[DayOfWeek.WEDNESDAY.name]?.total?.toFloat()?: 0f,
@@ -51,6 +52,10 @@ fun WeeklyChart(
         stringResource(R.string.Saturday),
         stringResource(R.string.Sunday),
     )
+    fun getWeeklyEntries() = List(daysOfWeek.size) {
+        entryOf(it, chartEntryModel[it])
+    }
+    val chartEntryModelProducer = ChartEntryModelProducer(getWeeklyEntries())
     val bottomAxisValueFormatter = AxisValueFormatter<AxisPosition.Horizontal.Bottom> {
             x, _ -> daysOfWeek[x.toInt() % daysOfWeek.size]
     }
@@ -75,7 +80,7 @@ fun WeeklyChart(
                     )
                 )
             ),
-            model = chartEntryModel,
+            chartModelProducer = chartEntryModelProducer,
             startAxis = rememberStartAxis(
                 label = textComponent{
                     color = MaterialTheme.colorScheme.onBackground.toArgb()

@@ -24,7 +24,7 @@ import com.patrykandpatrick.vico.core.axis.formatter.AxisValueFormatter
 import com.patrykandpatrick.vico.core.chart.line.LineChart
 import com.patrykandpatrick.vico.core.component.shape.shader.DynamicShaders
 import com.patrykandpatrick.vico.core.component.text.textComponent
-import com.patrykandpatrick.vico.core.entry.entryModelOf
+import com.patrykandpatrick.vico.core.entry.ChartEntryModelProducer
 import com.patrykandpatrick.vico.core.entry.entryOf
 import java.time.LocalDate
 import java.time.YearMonth
@@ -43,7 +43,7 @@ fun MonthlyChart(
         for(i in 0.. numberOfDays) {
         daysOfWeek.add(i.toString())
     }
-    val chartEntryModel = entryModelOf(getMonthlyEntries().subList(1, numberOfDays))
+    val chartEntryModelProducer = ChartEntryModelProducer(getMonthlyEntries().subList(1, numberOfDays))
     val bottomAxisValueFormatter = AxisValueFormatter<AxisPosition.Horizontal.Bottom> {
             x, _ -> daysOfWeek[x.toInt() % daysOfWeek.size]
     }
@@ -68,8 +68,7 @@ fun MonthlyChart(
                     )
                 ),
             ),
-            /*chartModelProducer = chartEntryModelProducer,*/
-            model = chartEntryModel,
+            chartModelProducer = chartEntryModelProducer,
             startAxis = rememberStartAxis(
                 label = textComponent{
                     color = MaterialTheme.colorScheme.onBackground.toArgb()

@@ -26,7 +26,8 @@ import com.patrykandpatrick.vico.core.axis.formatter.AxisValueFormatter
 import com.patrykandpatrick.vico.core.chart.line.LineChart
 import com.patrykandpatrick.vico.core.component.shape.shader.DynamicShaders
 import com.patrykandpatrick.vico.core.component.text.textComponent
-import com.patrykandpatrick.vico.core.entry.entryModelOf
+import com.patrykandpatrick.vico.core.entry.ChartEntryModelProducer
+import com.patrykandpatrick.vico.core.entry.entryOf
 import java.time.Month
 
 @Composable
@@ -34,7 +35,7 @@ fun YearlyChart(
     expenses: List<Expense>
 ) {
     val groupedExpenses = expenses.groupedByMonth()
-    val chartEntryModel = entryModelOf(
+    val chartEntryModel = listOf(
         groupedExpenses[Month.JANUARY.name]?.total?.toFloat()?: 0f,
         groupedExpenses[Month.FEBRUARY.name]?.total?.toFloat()?: 0f,
         groupedExpenses[Month.MARCH.name]?.total?.toFloat()?: 0f,
@@ -62,6 +63,10 @@ fun YearlyChart(
         stringResource(R.string.November),
         stringResource(R.string.December)
     )
+    fun getYearlyEntries() = List(monthsOfYear.size) {
+        entryOf(it, chartEntryModel[it])
+    }
+    val chartEntryModelProducer = ChartEntryModelProducer(getYearlyEntries())
     val bottomAxisValueFormatter = AxisValueFormatter<AxisPosition.Horizontal.Bottom> {
             x, _ -> monthsOfYear[x.toInt() % monthsOfYear.size]
     }
@@ -86,7 +91,7 @@ fun YearlyChart(
                     )
                 )
             ),
-            model = chartEntryModel,
+            chartModelProducer = chartEntryModelProducer,
             startAxis = rememberStartAxis(
                 label = textComponent{
                     color = MaterialTheme.colorScheme.onBackground.toArgb()
