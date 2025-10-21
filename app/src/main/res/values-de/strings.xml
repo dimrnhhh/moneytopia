@@ -29,6 +29,7 @@
     <string name="discard_button">Discard</string>
     <string name="discard_cancel_button">Cancel</string>
     <string name="transaction_saved">Transaction saved</string>
+    <string name="category_desc">Manage Categories</string>
     <string name="bills">Bill</string>
     <string name="debt">Debt</string>
     <string name="education">Education</string>
@@ -89,4 +90,8 @@
     <string name="November">Nov</string>
     <string name="October">Oct</string>
     <string name="December">Dec</string>
+    <string name="currency_dialog_title">Change Currency</string>
+    <string name="currency_dialog_desc">Enter the new currency symbol you want to use.</string>
+    <string name="currency_symbol_label">Currency Symbol</string>
+    <string name="currency_headline">Currency</string>
 </resources>

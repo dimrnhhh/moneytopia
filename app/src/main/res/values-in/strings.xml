@@ -29,6 +29,7 @@
     <string name="discard_button">Buang</string>
     <string name="discard_cancel_button">Batal</string>
     <string name="transaction_saved">Transaksi disimpan</string>
+    <string name="category_desc">Manage Categories</string>
     <string name="bills">Tagihan</string>
     <string name="debt">Hutang</string>
     <string name="education">Pendidikan</string>
@@ -89,4 +90,8 @@
     <string name="November">Nov</string>
     <string name="October">Okt</string>
     <string name="December">Des</string>
+    <string name="currency_dialog_title">Change Currency</string>
+    <string name="currency_dialog_desc">Enter the new currency symbol you want to use.</string>
+    <string name="currency_symbol_label">Currency Symbol</string>
+    <string name="currency_headline">Currency</string>
 </resources>
