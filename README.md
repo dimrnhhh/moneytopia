@@ -8,6 +8,9 @@ A fully functional personal expense tracker built with Jetpack Compose and Mater
 [<img src="art/get-it-on-izzyondroid.png" alt="Get it on IzzyOnDroid" height="80">](https://apt.izzysoft.de/fdroid/index/apk/com.dimrnhhh.moneytopia/)
 [<img src="art/get-it-on-openapk.png" alt="Get it on OpenAPK" height="80">](https://www.openapk.net/moneytopia/com.dimrnhhh.moneytopia/)
 
+> [!NOTE]
+This repository is not actively maintained at the moment due to a lack of time, but feel free to explore the code! 🚀
+
 ## Features
 - Material 3 (Material You) UI with Dynamic Color
 - Automatic light/dark mode
