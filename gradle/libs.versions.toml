@@ -18,7 +18,7 @@ navigationCompose = "2.9.7"
 composeMaterial3DatetimePickers = "0.7.2"
 lifecycleViewmodelCompose = "2.10.0"
 appcompat = "1.7.1"
-vicoCompose = "1.16.1"
+vicoCompose = "2.4.3"
 
 [libraries]
 androidx-activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activityCompose" }
